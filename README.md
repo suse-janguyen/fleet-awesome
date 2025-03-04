@@ -1,4 +1,4 @@
-### Fleet Awesome
+## Fleet Awesome
 
 A curated list of minimal reproducible examples, managed by SUSE Rancher Fleet. All assets should be quick and minimal, if customization is necessary, allow flexible config through secrets or downstream cluster `ConfigMap` objects.
 Unlike other "awesome-something" lists, the role of Fleet is as a facilitator for gitops operations, the convention, and format of the repo.
@@ -18,8 +18,8 @@ Initially, the primary topics for the repo are Infra and Vendor/Application Coll
 
  * (done) collect and organize initial configurations and charts/manifests/kustomizations
  * (done) set up gitjob-webhook, no polling for fleet. URL: `info.kubefred.com`, over cloudflared tunnel
- * commit the current working dir tree into gitlab
- * submit various Bundles for testing, using clusters in homelab (Parslab), deploy - test - remove
+ * (done) commit the current/inital working dir tree into gitlab
+ * submit various Bundles for testing, using clusters in homelab (Parslab), `GitRepo`... deploy - test - remove
  * evaluate project mapping, content organization, group naming conventions, subsystem repo structure
  * work towards goal of 100 assets, security signatures/checksum and provenance (auto gen via CI?)
  * document TODOs and READMEs for every current asset, flag some for removal or not 

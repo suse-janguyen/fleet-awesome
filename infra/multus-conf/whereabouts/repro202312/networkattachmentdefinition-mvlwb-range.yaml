@@ -1,0 +1,37 @@
+---
+apiVersion: "k8s.cni.cncf.io/v1"
+kind: NetworkAttachmentDefinition
+metadata:
+  name: mvlwb-range
+spec:
+  config: '{
+    "cniVersion": "0.3.1",
+    "plugins": [
+      {
+        "type": "macvlan",
+        "capabilities": {
+          "ips": true
+        },
+        "master": "eth1",
+        "mode": "bridge",
+        "ipam": {
+          "type": "whereabouts",
+          "range": "10.16.22.0/24",
+          "range_start": "10.16.22.50",
+          "range_end": "10.16.22.58",
+          "routes": [
+            {
+              "dst": "10.16.0.0/17"
+            }
+          ],
+          "gateway": "10.16.22.1"
+        }
+      },
+      {
+        "capabilities": {
+          "mac": true
+        },
+        "type": "tuning"
+      }
+    ]
+  }'

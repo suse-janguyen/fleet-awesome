@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pihole-vip
+  namespace: dns-pihole
+spec:
+  selector:
+    app: pihole
+  ports: 
+    - port: 8087
+      targetPort: 80
+  type: LoadBalancer
+###

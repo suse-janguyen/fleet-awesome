@@ -1,0 +1,28 @@
+---
+defaultNamespace: default
+namespace: default
+
+labels:
+  fleet-bundle: k6-operator
+
+helm: 
+  chart: k6-operator
+  repo: https://grafana.github.io/helm-charts
+  version: 3.11.0
+
+releaseName: k6-operator
+
+targetCustomizations:
+   - name: k6-operator
+
+     clusterSelector:
+       matchLabels:
+         grafana.k6-operator: enabled
+ 
+     clustergroupSelector:
+       matchLabels:
+         grafana.k6-operator: enabled
+
+     clusterGroup: ""
+
+###

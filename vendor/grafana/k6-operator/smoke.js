@@ -1,0 +1,18 @@
+import http from 'k6/http';
+import { check, sleep} from 'k6';
+
+export const options = {
+  vus: 4, // Key for Smoke test. Keep it at 2, 3, max 5 VUs
+  duration: '4m', // This can be shorter or just a few iterations
+};
+
+export default () => {
+  const urlRes = http.get('https://whoami-0a1016b4.nip.io/data?size=1&unit=mb');
+  sleep(0.20);
+  // MORE STEPS
+  // Here you can have more steps or complex script
+  // Step1
+  // Step2
+  // etc.
+};
+

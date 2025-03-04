@@ -1,0 +1,13 @@
+namespace: nfs-provisioner
+resources:
+  - github.com/kubernetes-sigs/nfs-subdir-external-provisioner//deploy
+  - namespace.yaml
+### change storageclass name
+patches:
+- target:
+    kind: StorageClass
+    name: nfs-client
+  patch: |-
+    - op: replace
+      path: /metadata/name
+      value: nfs-provisioner

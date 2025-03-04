@@ -1,0 +1,4 @@
+---
+resources:
+- https://raw.githubusercontent.com/kube-vip/website/refs/heads/main/content/manifests/rbac.yaml
+###

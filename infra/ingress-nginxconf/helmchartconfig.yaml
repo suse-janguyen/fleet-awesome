@@ -1,0 +1,23 @@
+---
+apiVersion: helm.cattle.io/v1
+kind: HelmChartConfig
+metadata:
+  name: rke2-ingress-nginx
+  namespace: kube-system
+spec:
+  valuesContent: |-
+    controller:
+      resources:
+        limits:
+          cpu: 2
+          memory: 512Mi
+        requests:
+          cpu: 20m
+          memory: 32Mi
+      config:
+        use-forwarded-headers: "true"
+        keep-alive-requests: "2000"
+        upstream-keepalive-requests: "1000"
+        max-worker-connections: "1000"
+###
+

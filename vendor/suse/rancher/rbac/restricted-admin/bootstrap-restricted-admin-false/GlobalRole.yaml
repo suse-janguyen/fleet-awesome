@@ -1,0 +1,119 @@
+---
+apiVersion: management.cattle.io/v3
+kind: GlobalRole
+metadata:
+  name: restricted-admin-replacement
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - secrets
+    verbs:
+      - create
+  - apiGroups:
+      - catalog.cattle.io
+    resources:
+      - clusterrepos
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - clustertemplates
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - clustertemplaterevisions
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - globalrolebindings
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - globalroles
+    verbs:
+      - delete
+      - deletecollection
+      - get
+      - list
+      - patch
+      - create
+      - update
+      - watch
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - users
+      - userattribute
+      - groups
+      - groupmembers
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - podsecurityadmissionconfigurationtemplates
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - authconfigs
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - nodedrivers
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - kontainerdrivers
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - roletemplates
+    verbs:
+      - '*'
+  - apiGroups:
+      - management.cattle.io
+    resources:
+      - templates
+      - templateversions
+    verbs:
+      - '*'
+inheritedClusterRoles:
+  - cluster-owner
+inheritedFleetWorkspacePermissions:
+  resourceRules:
+    - apiGroups:
+        - fleet.cattle.io
+      resources:
+        - clusterregistrationtokens
+        - gitreporestrictions
+        - clusterregistrations
+        - clusters
+        - gitrepos
+        - bundles
+        - bundledeployments
+        - clustergroups
+      verbs:
+        - "*"
+  workspaceVerbs:
+    - get
+    - list
+    - update
+    - create
+    - delete
+###

@@ -1,0 +1,26 @@
+---
+apiVersion: helm.cattle.io/v1
+kind: HelmChartConfig
+metadata:
+  name: traefik
+  namespace: kube-system
+spec:
+  valuesContent: |-
+    additionalArguments:
+      - "--log.level=DEBUG"
+      - "--certificatesresolvers.le.acme.email=cert-user@gxize.net"
+      - "--certificatesresolvers.le.acme.storage=/data/acme.json"
+      - "--certificatesresolvers.le.acme.dnschallenge.provider=cloudflare"
+      - "--certificatesresolvers.le.acme.dnschallenge.delaybeforecheck=10"
+      - "--certificatesresolvers.le.acme.caServer=https://acme-v02.api.letsencrypt.org/directory"
+      - "--providers.kubernetescrd.allowexternalnameservices=true"
+      - "--providers.kubernetescrd.allowemptyservices=true"
+      - "--providers.kubernetesingress.allowemptyservices=true"
+      - "--providers.kubernetesingress.allowexternalnameservices=true"
+    env:
+    - name: CF_DNS_API_TOKEN
+      valueFrom:
+        secretKeyRef:
+          key: token
+          name: cf-dns-api-token
+###

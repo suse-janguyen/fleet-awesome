@@ -1,0 +1,28 @@
+---
+defaultNamespace: default
+namespace: default
+
+labels:
+  fleet-bundle: my-excalidraw
+
+helm: 
+  chart: excalidraw
+  repo: https://pmoscode-helm.github.io/excalidraw/
+  version: 0.1.1
+
+releaseName: my-excalidraw
+
+targetCustomizations:
+  - name: my-excalidraw
+
+    clusterSelector: 
+      matchLabels:
+        my-excalidraw: enabled
+  
+    clustergroupSelector:
+      matchLabels:
+        my-excalidraw: enabled
+  
+    clusterGroup: ""
+  
+###

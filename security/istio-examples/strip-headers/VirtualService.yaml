@@ -1,0 +1,21 @@
+---
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: api-endpoint
+spec:
+  gateways:
+  - my-gateway
+  hosts:
+  - api-endpoint-via-ingressgw.apps.example.com
+  http:
+  - headers:
+      response:
+        remove:
+        - x-envoy-upstream-service-time
+        - server
+    match:
+      # omitted
+    route:
+      # omitted
+###

@@ -1,0 +1,46 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-svc
+  labels:
+    app: nginx-svc
+spec:
+  selector:
+    app: nginx
+  clusterIP: None
+  ports:
+  - name: server
+    port: 9999
+    targetPort: 80
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: nginx-sts
+spec:
+  selector:
+    matchLabels:
+      app: nginx-sts
+  serviceName: nginx-svc
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        k8s.v1.cni.cncf.io/networks: default/mvlwb-range
+      labels:
+        app: nginx-sts
+    spec:
+      volumes:
+      - name: nfs-volume
+        nfs:
+          server: wdnas.gxize.local
+          path: /nfs/Public/shared-misc
+      containers:
+      - name: nginx-sts
+        image: nginx
+        volumeMounts:
+        - name: nfs-volume
+          mountPath: /nfs
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "trap : TERM INT; sleep infinity & wait" ]

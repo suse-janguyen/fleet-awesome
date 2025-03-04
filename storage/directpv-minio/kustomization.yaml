@@ -1,0 +1,4 @@
+resources:
+- https://raw.githubusercontent.com/minio/directpv/refs/heads/master/resources/base/kustomization.yaml
+###
+

@@ -1,0 +1,28 @@
+---
+defaultNamespace: default
+namespace: bugfest
+
+labels:
+  fleet-bundle: tor-controller
+
+helm: 
+  chart: excalidraw
+  repo: https://bugfest.github.io/tor-controller
+  version: 0.1.17
+
+releaseName: my-excalidraw
+
+targetCustomizations:
+  - name: tor-controller
+
+    clusterSelector: 
+      matchLabels:
+        bugfest.tor-controller: enabled
+  
+    clustergroupSelector:
+      matchLabels:
+        bugfest.tor-controller: enabled
+  
+    clusterGroup: ""
+  
+###

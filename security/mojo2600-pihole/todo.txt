@@ -1,0 +1,4 @@
+### Pihole Chart from Mojo2600
+ 
+ When do they build the artifact for v6.0?
+

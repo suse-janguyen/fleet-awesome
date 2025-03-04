@@ -1,0 +1,18 @@
+---
+apiVersion: resources.cattle.io/v1
+kind: Backup
+metadata:
+  name: 115p
+spec:
+  resourceSetName: rancher-resource-set
+  retentionCount: 14
+  schedule: 15 13 * * *
+  storageLocation:
+    s3:
+      bucketName: backup
+      credentialSecretName: vultr-creds-xxyzqt0
+      credentialSecretNamespace: cattle-resources-system
+      endpoint: ewr1.vultrobjects.com
+      folder: rancher-gcp
+      region: ewr1
+###

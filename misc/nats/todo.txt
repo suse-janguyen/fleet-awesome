@@ -1,0 +1,6 @@
+### Upstream NATS
+
+ * Forgo this repo for appco?
+ * Perhaps rename to opensource-nats or upstream-nats...
+ * Existing values are highly env-dependent, with secrets, make generic
+

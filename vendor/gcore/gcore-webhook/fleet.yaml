@@ -1,0 +1,27 @@
+---
+defaultNamespace: cert-manager
+namespace: cert-manager
+
+labels:
+  fleet-bundle: gcore-webhook
+
+helm:
+  chart: gcore-webhook
+  repo: https://github.com/G-Core/cert-manager-webhook-gcore/tree/master/deploy/helm
+
+releaseName: gcore-webhook
+
+targetCustomizations:
+  - name: gcore-webhook
+ 
+    clusterSelector:
+      matchLabels:
+        gcore-webook: enabled
+
+    clusterGroupSelector:
+      matchLabels:
+        gcore-webhook: enabled
+   
+    clusterGroup: ""
+
+###

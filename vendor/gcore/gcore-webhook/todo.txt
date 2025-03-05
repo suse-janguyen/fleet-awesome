@@ -1,6 +1,0 @@
-### GCore Webhook
-
- * dns01 challenges for lets-encrypt certs
- * https://github.com/G-Core/cert-manager-webhook-gcore?tab=readme-ov-file#the-webhook
-
-...

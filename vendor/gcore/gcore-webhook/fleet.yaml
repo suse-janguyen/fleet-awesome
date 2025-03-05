@@ -9,6 +9,9 @@ helm:
   chart: gcore-webhook
   repo: https://github.com/G-Core/cert-manager-webhook-gcore/tree/master/deploy/helm
   version: 0.1.0
+  
+  values:
+    groupName: goatherd-casa   # match the groupName for Issuer/ClusterIssuer
 
 releaseName: gcore-webhook
 

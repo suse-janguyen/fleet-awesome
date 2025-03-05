@@ -1,0 +1,27 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: tls-whoami
+spec:
+  secretName: tls-whoami
+  duration: 2160h # 90 days
+  renewBefore: 240h # 10 days
+  privateKey:
+    algorithm: ECDSA
+    size: 256
+  usages:
+  - server auth
+  subject:
+    organizations:
+    - Gxize Internal
+  commonName: whoami-0a1016b4.gxize.local
+  dnsNames:
+  - whoami-0a1016b4.gxize.local
+  - whoami-0a1016b4.nip.io
+  - "*.whoami-0a1016b4.nip.io"
+  uris:
+    - spiffe://cluster.local/ns/default/sa/default
+  issuerRef:
+    name: cfssl-internal-gxize-ca
+    kind: ClusterIssuer
+    group: cfssl-issuer.wikimedia.org

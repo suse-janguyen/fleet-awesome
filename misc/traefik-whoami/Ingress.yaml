@@ -1,0 +1,22 @@
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: whoami
+  namespace: default
+
+spec:
+  rules:
+    - host: whoami-0a1016b4.nip.io
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: whoami
+                port:
+                  number: 80
+  tls:
+  - hosts: 
+    - whoami-0a1016b4.nip.io
+    secretName: tls-whoami

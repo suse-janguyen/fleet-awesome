@@ -1,0 +1,8 @@
+### Rocket Cluster Node
+
+ * ngrok ingress controller chart with credentials 
+ * metallb with L3 Adv VIP 10.16.23.232/29
+ * caddy custom chart with NFS
+ * testwiki manifest with testwiki-lb vip service
+
+...

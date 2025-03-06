@@ -1,0 +1,9 @@
+### OST777 Cluster Node
+ 
+ * directpv chart/manifest storage
+ * tor-contoller chart
+ * tor-snowflake-proxy chart
+ * rke2-snapshot-controller on k3s
+ * cilium 1.16 install (future chart?)
+
+...

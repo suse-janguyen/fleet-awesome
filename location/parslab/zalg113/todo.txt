@@ -1,0 +1,9 @@
+### Zalg113 Cluster Node
+
+ * L2 Adv Metallb-VIP 10.16.24.64/26
+ * whoami with whoami-vip on L2
+ * whoami-rewrite nginx target for /
+ * Multus Repro, net-attach-def CRs
+ * whereabouts range examples CRs, Dec15-2023 repro
+ * helmchartconfigs for canal-wireguard, ingress-nginx, multus-whereabouts
+...

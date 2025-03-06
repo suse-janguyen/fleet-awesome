@@ -6,4 +6,5 @@
  * nginx-ingress limit helmchartconfig
  * cilium helmchartconfig single-replica
  * jumpcloud ldap-auth
+ * kube-vip L3 Adv VIP 10.16.23.208/29
 ... 

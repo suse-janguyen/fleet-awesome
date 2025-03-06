@@ -1,7 +1,7 @@
 ### L650 Cluster Node
  
  * replacement for n515 failure
- * kube-vip 10.16.23.216/29
+ * kube-vip L3 Adv 10.16.23.216/29
  * pihole-svc traefik externalname passthrough
  * unifi-svc traefik externalname passthrough
  * whoami-0a1017d9.nip.io vip

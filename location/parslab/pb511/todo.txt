@@ -5,5 +5,5 @@
  * cloudflared tunnel blerp-kubefred (bravo/beta)
  * nginx-ingress limit helmchartconfig
  * cilium helmchartconfig single-replica
-
+ * jumpcloud ldap-auth
 ... 

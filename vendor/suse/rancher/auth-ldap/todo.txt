@@ -1,0 +1,7 @@
+### Auth Provider OpenLDAP
+ 
+ * uses exsiting jumpcloud account
+ * three globalrolebindings & one authconfig object
+ * see relevant terraform code for service-user account
+
+...

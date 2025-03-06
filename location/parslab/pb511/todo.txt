@@ -1,0 +1,9 @@
+### PB511 Cluster Node
+
+ * Beta Rancher Install, turtles, cis profile, ui-plugins
+ * cert-manager, democratic-csi nfs-client
+ * cloudflared tunnel blerp-kubefred (bravo/beta)
+ * nginx-ingress limit helmchartconfig
+ * cilium helmchartconfig single-replica
+
+... 

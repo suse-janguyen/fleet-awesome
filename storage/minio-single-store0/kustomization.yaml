@@ -1,0 +1,20 @@
+---
+generatorOptions:
+  disableNameSuffixHash: true
+  labels:
+    app: minio
+secretGenerator:
+- name: minio
+  literals:
+  - MINIO_ROOT_USER=admin
+  - MINIO_ROOT_PASSWORD=changemeplease!
+  namespace: storage
+
+resources:
+  - Namespace.yaml
+  - Certificate-cfssl.yaml
+  - Service.yaml
+  - Ingress.yaml
+  - Deployment.yaml
+
+###

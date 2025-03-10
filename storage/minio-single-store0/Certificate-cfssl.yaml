@@ -1,0 +1,28 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: tls-minio-r127
+spec:
+  secretName: tls-minio
+  duration: 2160h # 90 days
+  renewBefore: 240h # 10 days
+  privateKey:
+    algorithm: ECDSA
+    size: 256
+  usages:
+  - server auth
+  subject:
+    organizations:
+    - Gxize Internal
+  commonName: store0.gxize.local
+  dnsNames:
+  - store0.gxize.local
+  - console.store0.gxize.local
+  uris:
+    - spiffe://cluster.local/ns/default/sa/default
+  issuerRef:
+    name: cfssl-internal-gxize-ca
+    kind: ClusterIssuer
+    group: cfssl-issuer.wikimedia.org
+###

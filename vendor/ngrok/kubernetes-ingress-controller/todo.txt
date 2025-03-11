@@ -1,0 +1,5 @@
+### Ngrok Ingress Controller
+
+ * handle credential secrets, `credentials.apiKey` and `credentials.authtoken` from secrets-store
+
+...

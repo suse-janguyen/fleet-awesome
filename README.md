@@ -16,18 +16,19 @@ Initially, the primary topics for the repo are Infra and Vendor/Application Coll
 
 ## TODO: March 2025
 
- * (done) collect and organize initial configurations and charts/manifests/kustomizations
- * (done) set up gitjob-webhook, no polling for fleet. URL: `info.kubefred.com`, over cloudflared tunnel
- * (done) commit the current/inital working dir tree into gitlab
+- [x] collect and organize initial configurations and charts/manifests/kustomizations
+- [x] set up gitjob-webhook, no polling for fleet. URL: `info.kubefred.com`, over cloudflared tunnel
+- [x] commit the current/inital working dir tree into gitlab
+- [x] 100 assets
  * submit various Bundles for testing, using clusters in homelab (Parslab), `GitRepo`... deploy - test - remove
  * evaluate project mapping, content organization, group naming conventions, subsystem repo structure
- * work towards goal of 100 assets, security signatures/checksum and provenance (auto gen via CI?)
  * document TODOs and READMEs for every current asset, flag some for removal or not 
  
 ## TODO: April 2025
  
  * Secrets management, downstream config separation, asset variable templating
  * Target ClusterGroup Labels categorization, webhook polling tests, cluster variable templating
+ * security signatures/checksum and provenance (auto gen via CI?)
 
 ## TODO: May 2025
 

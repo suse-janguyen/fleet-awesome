@@ -10,7 +10,7 @@ helm:
   repo: https://bugfest.github.io/tor-controller
   version: 0.1.17
 
-releaseName: my-excalidraw
+releaseName: tor-controller
 
 targetCustomizations:
   - name: tor-controller

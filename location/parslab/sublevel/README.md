@@ -11,7 +11,8 @@ _Description:_
  * vip LB services for postgres, traefik-dashboard, traefik-vip
 
 _TODO_
-- [ ] Add Primary `GitRepo` to fleet-controller
+- [x] Add Primary `GitRepo` to fleet-controller
+- [ ] Alter GitRepo name so Bundles aren't named like `sublevel-location-parselab-sublevel`
 - [ ] Add inital `CusterGroups` for testing
 
 ...

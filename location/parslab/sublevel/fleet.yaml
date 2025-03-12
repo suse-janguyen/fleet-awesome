@@ -1,4 +1,7 @@
 ---
+defaultNamespace: default
+namespace: default
+
 kustomize:
   dir: ""
 

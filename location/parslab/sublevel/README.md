@@ -3,7 +3,7 @@
 _Description:_
  * Rancher downstream import to main instance rancher.kubefred, physical machines
  * cert-manager, gcore-webhook, cf-dns01 and gc-dns01 ClusterIssuers 
- * fleet-controller 0.11.3 standalone for r127 fleet-agent
+ * fleet-controller 0.11.5 standalone for r127 fleet-agent
  * nfs-subdir-external-provisioner nfs-client 
  * sm-operator beta testing, postgresql 17.0 manifest testing
  * cloudflared tunnel for info.kubefred, currently gitjob-webook dedicated host

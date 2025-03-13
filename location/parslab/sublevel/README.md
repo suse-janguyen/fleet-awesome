@@ -12,7 +12,8 @@ _Description:_
 
 _TODO_
 - [x] Add Primary `GitRepo` to fleet-controller
-- [ ] Alter GitRepo name so Bundles aren't named like `sublevel-location-parselab-sublevel`
+- [x] Alter GitRepo name so Bundles aren't named like ~sublevel-location-parselab-sublevel~ now uses `fawesome` placeholder
+- [ ] Optional Additional GitRepo resources
 - [ ] Add inital `CusterGroups` for testing
 
 ...

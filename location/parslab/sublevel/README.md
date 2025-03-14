@@ -17,6 +17,6 @@ _TODO_
 - [ ] Add inital `CusterGroups` for testing
 - [ ] fleet-controller options 
    * `.spec.correctDrift.enabled` = true for Resource Handling: Enable Self-Healing in UI 
-   * `.spec.keepResources' = true for Resource Handling: Always Keep Resources in UI
+   * `.spec.keepResources` = true for Resource Handling: Always Keep Resources in UI
 
 ...

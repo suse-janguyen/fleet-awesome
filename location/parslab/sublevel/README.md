@@ -15,5 +15,8 @@ _TODO_
 - [x] Alter GitRepo name so Bundles aren't named like ~sublevel-location-parselab-sublevel~ now uses `fawesome` placeholder
 - [ ] Optional Additional GitRepo resources
 - [ ] Add inital `CusterGroups` for testing
+- [ ] fleet-controller options 
+   * `.spec.correctDrift.enabled` = true for Resource Handling: Enable Self-Healing in UI 
+   * `.spec.keepResources' = true for Resource Handling: Always Keep Resources in UI
 
 ...

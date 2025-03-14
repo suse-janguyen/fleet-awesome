@@ -1,6 +1,0 @@
-### OKTA Auth Rancher
-
- * include terraform code
- * authconfig object, SP cert/key files, and metadata.xml file
- * option to use tf or yaml manifests 
-...

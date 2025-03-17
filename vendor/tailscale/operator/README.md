@@ -7,5 +7,5 @@ Tailscale Kubernetes Operator.
 _TODO_
 - [ ] helm value `ingressClass.enabled`: true as default
 - [ ] helm values `oauth.clientId` and `oauth.clientSecret` as synced secrets downstream
-
+- [ ] depends on secrets management for auth credentials
 ...

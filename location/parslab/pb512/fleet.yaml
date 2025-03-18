@@ -17,7 +17,7 @@ overrideTargets:
     # this needs some testing
     clusterSelector: ""
     clusterGroupSelector: ""
-    clusterGroup: parslab
+    clusterGroup: parslab-group
     clusterName: pb512
 
 ###

@@ -23,6 +23,6 @@ targetCustomizations:
        matchLabels:
          env: parslab
 
-     clusterGroup: ""
+     clusterGroup: parslab
 
 ###

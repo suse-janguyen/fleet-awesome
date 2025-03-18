@@ -15,14 +15,14 @@ releaseName: local-path-provisioner
 targetCustomizations:
    - name: localpath-provisioner
 
-     clusterSelector:
-       matchLabels:
-         rancher.localpath-provisioner: enabled
+#     clusterSelector:
+#       matchLabels:
+#         rancher.localpath-provisioner: enabled
  
      clusterGroupSelector:
        matchLabels:
          rancher.localpath-provisioner: enabled
 
-     clusterGroup: ""
+#     clusterGroup: ""
 
 ###

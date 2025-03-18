@@ -19,7 +19,7 @@ targetCustomizations:
       matchLabels:
         my-excalidraw: enabled
   
-    clustergroupSelector:
+    clusterGroupSelector:
       matchLabels:
         my-excalidraw: enabled
   

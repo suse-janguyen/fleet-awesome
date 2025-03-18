@@ -19,7 +19,7 @@ targetCustomizations:
        matchLabels:
          grafana.k6-operator: enabled
  
-     clustergroupSelector:
+     clusterGroupSelector:
        matchLabels:
          grafana.k6-operator: enabled
 

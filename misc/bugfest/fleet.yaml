@@ -19,7 +19,7 @@ targetCustomizations:
       matchLabels:
         bugfest.tor-controller: enabled
   
-    clustergroupSelector:
+    clusterGroupSelector:
       matchLabels:
         bugfest.tor-controller: enabled
   

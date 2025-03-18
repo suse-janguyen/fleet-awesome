@@ -16,7 +16,7 @@ targetCustomizations:
   - name: my-excalidraw
 
     clusterSelector: ""
-    clustergroupSelector: ""
+    clusterGroupSelector: ""
   
     clusterGroup: parslab
     clusterName: pb512

@@ -1,0 +1,28 @@
+---
+defaultNamespace: kube-system
+namespace: kube-system
+
+labels:
+  fleet-bundle: localpath-provisioner
+
+helm: 
+  chart: local-path-provisioner
+  repo: https://github.com/rancher/local-path-provisioner/tree/master/deploy/chart
+  version: 0.0.31
+
+releaseName: local-path-provisioner
+
+targetCustomizations:
+   - name: localpath-provisioner
+
+     clusterSelector:
+       matchLabels:
+         rancher.localpath-provisioner: enabled
+ 
+     clustergroupSelector:
+       matchLabels:
+         rancher.localpath-provisioner: enabled
+
+     clusterGroup: ""
+
+###

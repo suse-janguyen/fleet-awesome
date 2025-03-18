@@ -6,8 +6,8 @@ labels:
   fleet-bundle: localpath-provisioner
 
 helm: 
-  chart: git::https://github.com/rancher/local-path-provisioner/tree/master/deploy/chart/local-path-provisioner
-  #repo: https://github.com/rancher/local-path-provisioner/tree/master/deploy/chart/local-path-provisioner
+  chart: https://github.com/rancher/local-path-provisioner/deploy/chart/local-path-provisioner
+  #repo: https://github.com/rancher/local-path-provisioner/deploy/chart/local-path-provisioner
   version: 0.0.31
 
 releaseName: local-path-provisioner

@@ -12,17 +12,4 @@ helm:
 
 releaseName: k6-operator
 
-targetCustomizations:
-   - name: k6-operator
-
-     clusterSelector:
-       matchLabels:
-         grafana.k6-operator: enabled
- 
-     clusterGroupSelector:
-       matchLabels:
-         grafana.k6-operator: enabled
-
-     clusterGroup: ""
-
 ###

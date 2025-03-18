@@ -11,21 +11,8 @@ helm:
   version: 0.1.0
   
   values:
-    groupName: goatherd-casa   # match the groupName for Issuer/ClusterIssuer
+    groupName: goatherd-casa  # match the groupName for Issuer/ClusterIssuer
 
 releaseName: gcore-webhook
-
-targetCustomizations:
-  - name: gcore-webhook
- 
-    clusterSelector:
-      matchLabels:
-        gcore-webook: enabled
-
-    clusterGroupSelector:
-      matchLabels:
-        gcore-webhook: enabled
-   
-    clusterGroup: ""
 
 ###

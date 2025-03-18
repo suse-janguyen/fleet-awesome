@@ -12,17 +12,4 @@ helm:
 
 releaseName: my-excalidraw
 
-targetCustomizations:
-  - name: my-excalidraw
-
-    clusterSelector: 
-      matchLabels:
-        my-excalidraw: enabled
-  
-    clusterGroupSelector:
-      matchLabels:
-        my-excalidraw: enabled
-  
-    clusterGroup: ""
-  
 ###

@@ -12,17 +12,4 @@ helm:
 
 releaseName: tor-controller
 
-targetCustomizations:
-  - name: tor-controller
-
-    clusterSelector: 
-      matchLabels:
-        bugfest.tor-controller: enabled
-  
-    clusterGroupSelector:
-      matchLabels:
-        bugfest.tor-controller: enabled
-  
-    clusterGroup: ""
-  
 ###

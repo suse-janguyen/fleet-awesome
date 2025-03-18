@@ -12,13 +12,4 @@ helm:
 
 releaseName: my-excalidraw
 
-targetCustomizations:
-  - name: my-excalidraw
-
-    clusterSelector: ""
-    clusterGroupSelector: ""
-  
-    clusterGroup: parslab
-    clusterName: pb512
-  
 ###

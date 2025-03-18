@@ -10,19 +10,4 @@ labels:
 kustomize:
   dir: ""
 
-releaseName: local-path-provisioner
-
-targetCustomizations:
-   - name: localpath-provisioner
-
-     clusterSelector:
-       matchLabels:
-         rancher.localpath-provisioner: enabled
- 
-     clusterGroupSelector:
-       matchLabels:
-         env: parslab
-
-     clusterGroup: ""
-
 ###

@@ -1,5 +1,5 @@
 ---
 resources:
-- https://github.com/rancher/local-path-provisioner/deploy/chart/local-path-provisioner
+- https://github.com/rancher/local-path-provisioner/tree/master/deploy/chart/local-path-provisioner
 
 ###

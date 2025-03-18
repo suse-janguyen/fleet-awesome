@@ -1,0 +1,21 @@
+---
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: fastorage
+  namespace: clusters
+spec:
+  branch: main
+  clientSecretName: 20160622-flr-ed
+  paths:
+    - /storage/local-path-provisioner
+  repo: git@gitlab.com:flrichar/fleet-awesome
+  disablePolling: true
+  keepResources: true
+  targets:
+  - name: localpath
+    clusterGroupSelector:
+      matchLabels:
+        rancher.localpath-provisioner: enabled
+
+###

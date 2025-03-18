@@ -1,0 +1,21 @@
+---
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: fawesome
+  namespace: fleet-local
+spec:
+  branch: main
+  clientSecretName: 20160622-flr-ed
+  paths:
+    - /location/parslab/sublevel
+  disablePolling: true
+  keepResources: true
+  repo: git@gitlab.com:flrichar/fleet-awesome
+#targets:
+#  - name: fleetcontroller
+#    clusterGroupSelector:
+#      matchLabels:
+#        fleet-controller: true
+
+###

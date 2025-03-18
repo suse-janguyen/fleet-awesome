@@ -5,10 +5,8 @@ namespace: kube-system
 labels:
   fleet-bundle: localpath-provisioner
 
-helm: 
-  chart: https://github.com/rancher/local-path-provisioner/deploy/chart/local-path-provisioner
-  #repo: https://github.com/rancher/local-path-provisioner/deploy/chart/local-path-provisioner
-  version: 0.0.31
+kustomize:
+  dir: ""
 
 releaseName: local-path-provisioner
 

@@ -19,7 +19,7 @@ targetCustomizations:
        matchLabels:
          rancher.localpath-provisioner: enabled
  
-     clustergroupSelector:
+     clusterGroupSelector:
        matchLabels:
          rancher.localpath-provisioner: enabled
 

@@ -1,6 +1,7 @@
 ---
 namespace: kube-system
 resources:
-- github.com/rancher/local-path-provisioner/tree/master/deploy/chart/local-path-provisioner
+- https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.31/deploy/local-path-storage.yaml
+##- github.com/rancher/local-path-provisioner/tree/master/deploy/chart/local-path-provisioner
 
 ###

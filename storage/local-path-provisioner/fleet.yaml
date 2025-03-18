@@ -1,6 +1,5 @@
 ---
 defaultNamespace: kube-system
-namespace: kube-system
 
 labels:
   fleet-bundle: localpath-provisioner

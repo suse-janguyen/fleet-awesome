@@ -21,7 +21,7 @@ targetCustomizations:
  
      clusterGroupSelector:
        matchLabels:
-         rancher.localpath-provisioner: enabled
+         env: parslab
 
      clusterGroup: ""
 

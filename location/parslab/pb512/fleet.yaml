@@ -12,4 +12,12 @@ helm:
 
 releaseName: my-excalidraw
 
+overrideTargets:
+  - name: my-excalidraw
+    # this needs some testing
+    clusterSelector: ""
+    clusterGroupSelector: ""
+    clusterGroup: parslab
+    clusterName: pb512
+
 ###

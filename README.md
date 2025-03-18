@@ -20,9 +20,10 @@ Initially, the primary topics for the repo are Infra and Vendor/Application Coll
 - [x] set up gitjob-webhook, no polling for fleet. URL: `info.kubefred.com`, over cloudflared tunnel
 - [x] commit the current/inital working dir tree into gitlab
 - [x] 100+ assets represented
-- [x] High-Level Executive Summary
+- [x] High-Level Executive Summary (needs polish)
+- [x] submit various Bundles for testing, using clusters in homelab (Parslab), `GitRepo`... deploy - test - remove (ongoing)...
 - [ ] CRD flowchart diagram
- * submit various Bundles for testing, using clusters in homelab (Parslab), `GitRepo`... deploy - test - remove
+- [ ] polish "Exec Summary" page with mini-tweety-toot and longer description
  * evaluate project mapping, content organization, group naming conventions, subsystem repo structure
  * document TODOs and READMEs for every current asset, flag some for removal or not 
  

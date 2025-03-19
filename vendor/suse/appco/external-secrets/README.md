@@ -9,5 +9,5 @@ Note: The upstream developers only [test against](https://external-secrets.io/la
 
 _TODO_
 - [ ] tests with K8S 1.30, 1.31 with ESO 0.14.x 
-
+- [ ] use `PushSecret`to move between clusters and providers, [docs for the CRD](https://external-secrets.io/latest/guides/pushsecrets/)
 ...

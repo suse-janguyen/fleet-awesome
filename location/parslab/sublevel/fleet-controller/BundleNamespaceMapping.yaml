@@ -1,0 +1,19 @@
+---
+kind: BundleNamespaceMapping
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: stuff-things-testing
+  namespace: fleet-mapping
+
+# Bundles to match by label.  The labels are defined in the fleet.yaml
+# labels field or from the GitRepo metadata.labels field
+bundleSelector:
+  matchLabels:
+   mapping: bundle
+
+# Namespaces to match by label
+namespaceSelector:
+  matchLabels:
+   mapping: namespace
+
+###

@@ -7,7 +7,7 @@ The `sublevel` cluster is a downstream of Rancher, but acts as a controller for 
   * _(do not remove those resources if gitrepo targets are removed...)_
 
 _TODO_
-- [ ] bundle namespace mapping
+- [ ] bundle namespace mapping, [see the documentation](https://fleet.rancher.io/namespaces#cross-namespace-deployments)
 - [ ] possible overrideTargets for fleet.yaml bundles, not controller-specific
 
 ...

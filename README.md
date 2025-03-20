@@ -22,8 +22,8 @@ Initially, the primary topics for the repo are Infra and Vendor/Application Coll
 - [x] 100+ assets represented
 - [x] High-Level Executive Summary (needs polish)
 - [x] submit various Bundles for testing, using clusters in homelab (Parslab), `GitRepo`... deploy - test - remove (ongoing)...
+- [x] polish "Exec Summary" page with mini-tweety-toot and longer description, short description in the repo
 - [ ] CRD flowchart diagram
-- [ ] polish "Exec Summary" page with mini-tweety-toot and longer description
  * evaluate project mapping, content organization, group naming conventions, subsystem repo structure
  * document TODOs and READMEs for every current asset, flag some for removal or not 
  

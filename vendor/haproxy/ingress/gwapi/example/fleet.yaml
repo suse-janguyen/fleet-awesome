@@ -1,0 +1,20 @@
+---
+defaultNamespace: haproxytech
+
+labels:
+  fleet-bundle: haproxy-ingress-gwapi-example
+
+kustomize:
+  dir: ""
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        haproxy-ingress: enabled
+
+dependsOn:
+  - selector:
+      matchLabels: 
+        fleet-bundle: haproxy-ingress-gwapi
+
+###

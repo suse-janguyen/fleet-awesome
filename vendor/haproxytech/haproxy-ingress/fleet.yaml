@@ -1,6 +1,5 @@
 ---
-defaultNamespace: default
-namespace: haproxytech
+defaultNamespace: haproxytech
 
 labels:
   fleet-bundle: haproxy-ingress

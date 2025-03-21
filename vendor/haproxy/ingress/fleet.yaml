@@ -22,9 +22,6 @@ helm:
 
 releaseName: k8s-ingress
 
-kustomize:
-  dir: ""
-
 overrideTargets:
   - clusterGroupSelector:
       matchLabels:

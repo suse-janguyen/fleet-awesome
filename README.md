@@ -22,10 +22,11 @@ Initially, the primary topics for the repo are Infra and Vendor/Application Coll
 - [x] 100+ assets represented
 - [x] High-Level Executive Summary (needs polish)
 - [x] submit various Bundles for testing, using clusters in homelab (Parslab), `GitRepo`... deploy - test - remove (ongoing)...
-- [x] polish "Exec Summary" page with mini-tweety-toot and longer description, short description in the repo
+- [x] polish "Exec Summary" page with blurb and longer description, short description in the repo
+- [x] evaluate project mapping, content organization, group naming conventions, subsystem repo structure (ongoing)
+- [x] document TODOs and READMEs for every current asset, flag some for removal (ongoing)
+- [ ] secrets & configmap `ValuesFrom` fleet.yaml bundle options, [see the docs](https://fleet.rancher.io/gitrepo-content#using-valuesfrom) for next-steps variable templating in April
 - [ ] CRD flowchart diagram
- * evaluate project mapping, content organization, group naming conventions, subsystem repo structure
- * document TODOs and READMEs for every current asset, flag some for removal or not 
  
 ## TODO: April 2025
  

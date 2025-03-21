@@ -2,7 +2,4 @@
 resources:
 - https://github.com/kubernetes-sigs/gateway-api/releases/download/v0.5.1/experimental-install.yaml
 - https://raw.githubusercontent.com/haproxytech/kubernetes-ingress/master/deploy/tests/config/experimental/gwapi-rbac.yaml
-- GatewayClass.yaml
-- Gateway.yaml
-- TCPRoute.yaml
 ###

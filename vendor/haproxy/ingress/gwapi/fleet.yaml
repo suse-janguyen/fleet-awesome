@@ -2,7 +2,7 @@
 defaultNamespace: haproxytech
 
 labels:
-  fleet-bundle: haproxy-ingress
+  fleet-bundle: haproxy-ingress-gwapi
 
 kustomize:
   dir: ""
@@ -11,5 +11,10 @@ overrideTargets:
   - clusterGroupSelector:
       matchLabels:
         haproxy-ingress: enabled
+
+dependsOn:
+  - selector:
+      matchLabels: 
+        fleet-bundle: haproxy-ingress
 
 ###

@@ -12,4 +12,9 @@ helm:
 
 releaseName: pihole
 
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        mojo2600-pihole: enabled
+
 ###

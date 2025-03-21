@@ -7,7 +7,8 @@ The `sublevel` cluster is a downstream of Rancher, but acts as a controller for 
   * _(do not remove those resources if gitrepo targets are removed...)_
 
 _TODO_
+- [x] `overrideTargets` for fleet.yaml bundles, override the targets from the GitRepo, tested w/ pihole chart & ClusterGroups
+- [x] `targetCustomizations` specifically for helm values, ex: modify values for specific environments
 - [ ] bundle namespace mapping, [see the documentation](https://fleet.rancher.io/namespaces#cross-namespace-deployments)
-- [ ] possible overrideTargets for fleet.yaml bundles, not controller-specific
 
 ...

@@ -1,0 +1,27 @@
+---
+defaultNamespace: default
+namespace: haproxytech
+
+labels:
+  fleet-bundle: haproxy-ingress
+
+helm:
+  chart: oci://ghcr.io/haproxytech/helm-charts/kubernetes-ingress
+  version: 1.44.2
+  values:
+    controller:
+      replicaCount: 1
+      kubernetesGateway:
+        enabled: true
+        gatewayControllerName: haproxy.org/gateway-controller
+    namespace:
+      create: true
+
+releaseName: haproxy-ingress
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        haproxy-ingress: enabled
+
+###

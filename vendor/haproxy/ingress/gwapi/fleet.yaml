@@ -1,0 +1,15 @@
+---
+defaultNamespace: haproxytech
+
+labels:
+  fleet-bundle: haproxy-ingress
+
+kustomize:
+  dir: ""
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        haproxy-ingress: enabled
+
+###

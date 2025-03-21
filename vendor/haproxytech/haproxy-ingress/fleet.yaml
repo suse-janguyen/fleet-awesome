@@ -8,8 +8,6 @@ helm:
   chart: oci://ghcr.io/haproxytech/helm-charts/kubernetes-ingress
   version: 1.44.2
   values:
-    namespace:
-      create: true
     controller:
       replicaCount: 1
       kubernetesGateway:

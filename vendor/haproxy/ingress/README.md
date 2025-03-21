@@ -1,7 +1,7 @@
 ### Haproxy Ingress 
 
  * [Documentation](https://github.com/haproxytech/helm-charts/tree/main/kubernetes-ingress)
- * [GatewayAPI / GAPI Docs](https://github.com/haproxytech/helm-charts/tree/main/kubernetes-ingress#installing-gateway-api-support) Note: Current supported version is 0.5.1 -- only supporting TCP Route
+ * [GatewayAPI / GAPI Docs](https://www.haproxy.com/documentation/kubernetes-ingress/gateway-api/enable-gateway-api/) Note: Current supported version is 0.5.1 -- only supporting TCP Route
 
 _TODO_ 
 - [x] fleet bundle, to test - bundle name vendor/haproxytech/haproxy-ingress adds too many chars, >63

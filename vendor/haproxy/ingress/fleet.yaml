@@ -13,6 +13,12 @@ helm:
       kubernetesGateway:
         enabled: true
         gatewayControllerName: haproxy.org/gateway-controller
+  service:
+    tcpPorts:
+      - name: listener1
+        protocol: TCP
+        port: 8000
+        targetPort: 8000
 
 releaseName: k8s-ingress
 

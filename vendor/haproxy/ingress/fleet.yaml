@@ -14,7 +14,10 @@ helm:
         enabled: true
         gatewayControllerName: haproxy.org/gateway-controller
 
-releaseName: haproxy-ingress
+releaseName: k8s-ingress
+
+kustomize:
+  dir: ""
 
 overrideTargets:
   - clusterGroupSelector:

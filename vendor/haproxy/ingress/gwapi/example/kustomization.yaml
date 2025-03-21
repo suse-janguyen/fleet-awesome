@@ -1,8 +1,5 @@
 ---
 resources:
-- GatewayClass.yaml
 - Gateway.yaml
 - TCPRoute.yaml
-resourcesOrder:
-  order: [ "GatewayClass", "Gateway", "TCPRoute" ]
 ###

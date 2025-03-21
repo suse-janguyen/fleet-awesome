@@ -1,5 +1,15 @@
 ---
 apiVersion: gateway.networking.k8s.io/v1alpha2
+kind: GatewayClass
+metadata:
+  namespace: default
+  name: haproxy-ingress-gatewayclass
+spec:
+  controllerName: haproxy.org/gateway-controller
+
+###
+---
+apiVersion: gateway.networking.k8s.io/v1alpha2
 kind: Gateway
 metadata:
   name: default-namespace-gateway

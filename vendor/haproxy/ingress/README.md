@@ -6,6 +6,6 @@
 _TODO_ 
 - [x] fleet bundle, to test - bundle name vendor/haproxytech/haproxy-ingress adds too many chars, >63
 - [x] list TCP / GatewayAPI examples (testing... done)
-- [ ] Optional, a bundle-diff patch [see docs](https://fleet.rancher.io/bundle-diffs), to ignore the haproxy-ingress-crjob ... if one deletes the Job, the Bundle goes unready, even if it's in `Status: Succeeded` (Completed).
+- [ ] workaround with extra ttl time of 10d for Job, mitigate issue #2051
 
 ...

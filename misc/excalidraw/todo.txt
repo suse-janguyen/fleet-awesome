@@ -1,3 +1,0 @@
----
-todo, fleet-bundle or kusomtization of the chart -
-https://pmoscode-helm.github.io/excalidraw/

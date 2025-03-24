@@ -9,7 +9,16 @@ helm:
   chart: excalidraw
   repo: https://pmoscode-helm.github.io/excalidraw/
   version: 0.1.1
+  valuesFrom:
+    - configMapKeyRef:
+        name: my-excalidraw-values
+        key: values.yaml
 
 releaseName: my-excalidraw
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        my-excalidraw: enabled
 
 ###

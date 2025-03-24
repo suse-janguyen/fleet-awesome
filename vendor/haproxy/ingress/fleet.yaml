@@ -22,6 +22,11 @@ helm:
 
 releaseName: k8s-ingress
 
+valuesFrom:
+  - configMapKeyRef:
+      name: haproxy-ingress-values
+      key: values.yaml
+
 overrideTargets:
   - clusterGroupSelector:
       matchLabels:

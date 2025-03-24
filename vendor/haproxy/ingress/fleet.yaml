@@ -19,13 +19,12 @@ helm:
             protocol: TCP
             port: 8000
             targetPort: 8000
+  valuesFrom:
+    - configMapKeyRef:
+        name: haproxy-ingress-values
+        key: values.yaml
 
 releaseName: k8s-ingress
-
-valuesFrom:
-  - configMapKeyRef:
-      name: haproxy-ingress-values
-      key: values.yaml
 
 overrideTargets:
   - clusterGroupSelector:

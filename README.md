@@ -25,7 +25,9 @@ Initially, the primary topics for the repo are Infra and Vendor/Application Coll
 - [x] polish "Exec Summary" page with blurb and longer description, short description in the repo
 - [x] evaluate project mapping, content organization, group naming conventions, subsystem repo structure (ongoing)
 - [x] document TODOs and READMEs for every current asset, flag some for removal (ongoing)
-- [ ] secrets & configmap `ValuesFrom` fleet.yaml bundle options, [see the docs](https://fleet.rancher.io/gitrepo-content#using-valuesfrom) for next-steps variable templating in April
+- [x] publuc oci image/repo for helm charts (haproxy-ingress)
+- [x] ~secrets &~ configmap `ValuesFrom` fleet.yaml bundle options, [see the docs](https://fleet.rancher.io/gitrepo-content#using-valuesfrom) for next-steps variable templating in April
+- [ ] secrets `valuesFrom` instead of ConfigMap above
 - [ ] CRD flowchart diagram
  
 ## TODO: April 2025

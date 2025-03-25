@@ -4,6 +4,7 @@ defaultNamespace: kube-system
 kustomize: 
   dir: ""
 
-takeOwnership: false
+helm:
+  takeOwnership: false
 
 ###

@@ -1,0 +1,9 @@
+---
+defaultNamespace: kube-system
+
+kustomize: 
+  dir: ""
+
+takeOwnership: false
+
+###

@@ -8,4 +8,6 @@ One can disable the admission controller on a vulnerable rke2-ingress-nginx inst
 
 > _If you have installed ingress-nginx using Helm, reinstall with controller.admissionWebhooks.enabled=false._
 
+This is achieved simply with a `HelmChartConfig` and kustomization.
+
 ...

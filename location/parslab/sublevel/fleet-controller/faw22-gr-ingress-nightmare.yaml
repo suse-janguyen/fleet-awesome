@@ -1,0 +1,17 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: faw22
+  namespace: clusters
+spec:
+  branch: main
+  clientSecretName: 20160622-flr-ed
+  paths:
+    - /security/ingress-nightmare
+  disablePolling: true
+  keepResources: true
+  repo: git@gitlab.com:flrichar/fleet-awesome
+  targets:
+    - clusterGroup: parslab-group
+
+###

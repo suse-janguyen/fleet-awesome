@@ -1,0 +1,8 @@
+---
+defaultNamespace: calico-vpp-dataplane
+
+kustomize:
+  # To use a kustomization.yaml different from the one in the root folder, add a path
+  dir: ""
+
+###

@@ -1,9 +1,0 @@
-See BrianA's notes.
-
-https://docs.tigera.io/calico/latest/getting-started/kubernetes/vpp/getting-started
-
-https://suse.slack.com/files/U030X84954L/F08E34XK3GA/enabling_vpp_with_calico_on_rke2.pdf
-
-Two manifests, hugepages and non-hugepages. VPP can use wireguard or ipsec.
-
-...

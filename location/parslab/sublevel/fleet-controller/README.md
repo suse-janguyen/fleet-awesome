@@ -11,5 +11,7 @@ _TODO_
 - [x] `targetCustomizations` specifically for helm values, modify values for specific environments
 - [x] added example GitRepo for "Ingress Nightmare" bundle under security group
 - [ ] bundle namespace mapping, [see the documentation](https://fleet.rancher.io/namespaces#cross-namespace-deployments)
+- [ ] mixing/joining `HelmChartConfig` sources, move into a configmap, avoid static manifests?
+- [ ] secrets management workflow
 
 ...

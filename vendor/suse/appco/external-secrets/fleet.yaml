@@ -1,0 +1,25 @@
+---
+defaultNamespace: external-secrets
+
+labels:
+  fleet-bundle: external-secrets
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/external-secrets-operator
+  version: 0.14.4
+  valuesFrom:
+    - configMapKeyRef:
+        name: external-secrets-values
+        key: values.yaml
+    - secretKeyRef:
+        name: external-secrets-values
+        key: values.yaml
+
+release-name: external-secrets-operator
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        external-secrets: enabled
+
+###

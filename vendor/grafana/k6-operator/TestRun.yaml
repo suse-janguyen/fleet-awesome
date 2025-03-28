@@ -2,7 +2,7 @@
 apiVersion: k6.io/v1alpha1
 kind: TestRun
 metadata:
-  name: k6-sample
+  name: k6-testrun-smoketest
 spec:
   parallelism: 4
   script:

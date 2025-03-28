@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: smoke-test
+  name: k6-smoke-test
 
 data:
   smoke.js: |+

@@ -19,6 +19,6 @@ kubectl create configmap breakpoint --from-file=breakpoint.js --dry-run=client -
 
 _TODO_
 - [x] move test.js files into ConfigMap, refrenced by TestRun CRD.
-- [ ] fleet bundle for operator and the TestRun example
+- [x] fleet bundle for operator and then TestRun example (`dependsOn`)
 
 ...

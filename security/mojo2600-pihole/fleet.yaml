@@ -9,8 +9,8 @@ helm:
   chart: pihole
   repo: https://mojo2600.github.io/pihole-kubernetes/
   version: 2.29.1
-
-releaseName: pihole
+  values:
+    releaseName: pihole
 
 overrideTargets:
   - clusterGroupSelector:

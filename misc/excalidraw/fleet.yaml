@@ -13,8 +13,8 @@ helm:
     - configMapKeyRef:
         name: my-excalidraw-values
         key: values.yaml
-
-releaseName: my-excalidraw
+  values:
+     releaseName: my-excalidraw
 
 overrideTargets:
   - clusterGroupSelector:

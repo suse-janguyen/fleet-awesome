@@ -9,8 +9,8 @@ helm:
   chart: excalidraw
   repo: https://pmoscode-helm.github.io/excalidraw/
   version: 0.1.1
-
-releaseName: my-excalidraw
+  values:
+    releaseName: my-excalidraw
 
 overrideTargets:
   - name: my-excalidraw

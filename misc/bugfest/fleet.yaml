@@ -6,10 +6,10 @@ labels:
   fleet-bundle: tor-controller
 
 helm: 
-  chart: excalidraw
+  chart: tor-controller
   repo: https://bugfest.github.io/tor-controller
   version: 0.1.17
-
-releaseName: tor-controller
+  values:
+    releaseName: tor-controller
 
 ###

@@ -8,8 +8,6 @@ helm:
   chart: k6-operator
   repo: https://grafana.github.io/helm-charts
   version: 3.11.0
-
-  values:
-    releaseName: k6-operator
+  releaseName: k6-operator
 
 ###

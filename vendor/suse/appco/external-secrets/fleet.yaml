@@ -12,9 +12,9 @@ helm:
     - configMapKeyRef:
         name: external-secrets-values
         key: values.yaml
-    - secretKeyRef:
-        name: external-secrets-values
-        key: values.yaml
+#    - secretKeyRef:
+#        name: external-secrets-values
+#        key: values.yaml
 
 
 overrideTargets:

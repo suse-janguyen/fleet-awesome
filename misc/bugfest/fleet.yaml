@@ -9,7 +9,6 @@ helm:
   chart: tor-controller
   repo: https://bugfest.github.io/tor-controller
   version: 0.1.17
-  values:
-    releaseName: tor-controller
+  releaseName: tor-controller
 
 ###

@@ -7,6 +7,7 @@ labels:
 helm:
   chart: oci://ghcr.io/haproxytech/helm-charts/kubernetes-ingress
   version: 1.44.2
+  releaseName: haproxy-ingress
   values:
     controller:
       replicaCount: 1
@@ -19,7 +20,6 @@ helm:
             protocol: TCP
             port: 8000
             targetPort: 8000
-    releaseName: haproxy-ingress
   valuesFrom:
     - configMapKeyRef:
         name: haproxy-ingress-values

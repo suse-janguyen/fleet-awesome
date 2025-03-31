@@ -27,14 +27,15 @@ Initially, the primary topics for the repo are Infra and Vendor/Application Coll
 - [x] document TODOs and READMEs for every current asset, flag some for removal (ongoing)
 - [x] publuc oci image/repo for helm charts (haproxy-ingress)
 - [x] ~secrets &~ configmap `ValuesFrom` fleet.yaml bundle options, [see the docs](https://fleet.rancher.io/gitrepo-content#using-valuesfrom) for next-steps variable templating in April
-- [ ] secrets `valuesFrom` instead of ConfigMap above
-- [ ] CRD flowchart diagram
+- [x] use `helm.releaseName` in fleet-bundles to overcome hurdle of long (>63 char) chart/release names 
  
 ## TODO: April 2025
  
- * Secrets management, downstream config separation, asset variable templating
- * Target ClusterGroup Labels categorization, webhook polling tests, cluster variable templating
- * security signatures/checksum and provenance (auto gen via CI?)
+- [ ] secrets `valuesFrom` in addition to ConfigMap 
+- [ ] CRD flowchart diagram
+- [ ] Secrets management, downstream config separation, general-asset variable templating
+- [ ] Target ClusterGroup Labels categorization, webhook polling tests, cluster-specific variable templating
+- [ ] security signatures, sha256sum checksum, provenance ... auto-generate via CI-actions/workflows
 
 ## TODO: May 2025
 

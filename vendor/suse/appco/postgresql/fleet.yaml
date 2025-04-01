@@ -1,0 +1,25 @@
+---
+defaultNamespace: pgdb-system
+
+labels:
+  fleet-bundle: postgresql
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/postgresql
+  version: 0.3.7
+  releaseName: postgresql
+  valuesFrom:
+    - configMapKeyRef:
+        name: postgresql-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: postgresql-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        appco.postgresql: enabled
+
+###

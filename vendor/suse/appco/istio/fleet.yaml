@@ -1,0 +1,25 @@
+---
+defaultNamespace: istio-system
+
+labels:
+  fleet-bundle: istio
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/istio
+  version: 0.7.1
+  releaseName: istio
+  valuesFrom:
+    - configMapKeyRef:
+        name: istio-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: istio-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        appco.istio: enabled
+
+###

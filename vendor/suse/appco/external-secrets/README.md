@@ -8,8 +8,9 @@ See the [AppCo Docs](https://apps.rancher.io/applications/external-secrets-opera
 Note: The upstream developers only [test against](https://external-secrets.io/latest/introduction/stability-support/) the latest version of Kubernetes.
 
 _TODO_
-- [ ] pre-configure configmap and/or secret with appco auth
-- [ ] tests with K8S 1.30, 1.31 with ESO 0.14.x 
+- [x] pre-configure secret with appco auth
+- [x] pre-configure configmap with gloabal.`imagePullSecrets` ... (accesstoken, serviceacct gives 403)
+- [x] tests with K8S 1.30, 1.31 with ESO 0.14.x 
 - [ ] use `PushSecret` to move between clusters and providers, [docs for the CRD](https://external-secrets.io/latest/guides/pushsecrets/)
 
 ...

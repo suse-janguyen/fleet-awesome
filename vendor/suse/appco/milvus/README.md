@@ -14,5 +14,6 @@ See [Application Collection Documentation](https://apps.rancher.io/applications/
 
 _TODO_
 - [ ] test install/uninstall, with minimal values if possible
+- [ ] check resource requirements, better suited for cloud-environment than a lab?
 
 ...

@@ -1,0 +1,25 @@
+---
+defaultNamespace: metallb-system
+
+labels:
+  fleet-bundle: metallb
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/metallb
+  version: 0.14.9
+  releaseName: metallb
+  valuesFrom:
+    - configMapKeyRef:
+        name: metallb-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: metallb-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        appco.metallb: enabled
+
+###

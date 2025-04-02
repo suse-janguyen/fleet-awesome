@@ -1,0 +1,20 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: bugfest-sample-tor
+
+kustomize:
+  dir: ""
+
+overrideTargets:
+  - clusterGroupSelector:
+       matchLabels:
+         bugfest.tor-controller: enabled
+
+dependsOn:
+  - selector:
+      matchLabels:
+        fleet-bundle: bugfest-tor-controller
+
+###

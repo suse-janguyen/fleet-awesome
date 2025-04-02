@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata: 
+  name: tclient
+  namespace: default
+spec:
+  type: NodePort
+  ports: 
+  - name: tclient
+    port: 9050
+    protocol: TCP
+    nodePort: 31857
+  selector:
+    app: sample-tor-svc
+
+###

@@ -1,6 +1,5 @@
 ---
 defaultNamespace: default
-namespace: bugfest
 
 labels:
   fleet-bundle: tor-controller
@@ -10,5 +9,10 @@ helm:
   repo: https://bugfest.github.io/tor-controller
   version: 0.1.17
   releaseName: tor-controller
+
+overrideTargets:
+  - clusterGroupSelector:
+     matchLabels:
+       bugfest.tor-controller: enabled
 
 ###

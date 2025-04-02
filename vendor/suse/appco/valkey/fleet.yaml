@@ -1,0 +1,25 @@
+---
+defaultNamespace: valkey
+
+labels:
+  fleet-bundle: valkey
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/valkey
+  version: 0.7.0
+  releaseName: valkey
+  valuesFrom:
+    - configMapKeyRef:
+        name: valkey-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: valkey-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        appco.valkey: enabled
+
+###

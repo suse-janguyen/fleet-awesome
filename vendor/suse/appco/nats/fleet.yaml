@@ -1,0 +1,25 @@
+---
+defaultNamespace: nats-system
+
+labels:
+  fleet-bundle: nats
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/nats
+  version: 1.2.11
+  releaseName: nats
+  valuesFrom:
+    - configMapKeyRef:
+        name: nats-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: nats-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        appco.nats: enabled
+
+###

@@ -1,0 +1,25 @@
+---
+defaultNamespace: redis-system
+
+labels:
+  fleet-bundle: redis
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/redis
+  version: 1.0.3
+  releaseName: redis
+  valuesFrom:
+    - configMapKeyRef:
+        name: redis-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: redis-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        appco.redis: enabled
+
+###

@@ -1,0 +1,25 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: oauth2-proxy
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/oauth2-proxy
+  version: 7.12.8
+  releaseName: oauth2-proxy
+  valuesFrom:
+    - configMapKeyRef:
+        name: oauth2-proxy-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: oauth2-proxy-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        appco.oauth2-proxy: enabled
+
+###

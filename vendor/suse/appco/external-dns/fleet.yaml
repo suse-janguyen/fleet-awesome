@@ -1,0 +1,25 @@
+---
+defaultNamespace: external-dns
+
+labels:
+  fleet-bundle: external-dns
+
+helm:
+  chart: oci://dp.apps.rancher.io/charts/external-dns
+  version: 1.16.0
+  releaseName: external-dns
+  valuesFrom:
+    - configMapKeyRef:
+        name: external-dns-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: external-dns-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        appco.external-dns: enabled
+
+###

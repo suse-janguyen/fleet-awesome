@@ -4,3 +4,7 @@ A production-ready vendor-neutral OCI image registry - images stored in OCI imag
 
 Doccumentation for zot is located at: [https://zotregistry.dev](https://zotregistry.dev)
 
+_TODO_
+- [x] configmap, namespace, and values.yaml
+- [ ] testing different values options
+

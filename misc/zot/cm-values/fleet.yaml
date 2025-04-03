@@ -1,0 +1,20 @@
+---
+defaultNamespace: zot-system
+
+labels:
+  fleet-bundle: zot-cmvalues
+
+kuszomize:
+  dir: ""
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        project-zot.zot: enabled
+
+dependsOn:
+  - selector:
+      matchLabels:
+        fleet-bundle: zot
+
+###

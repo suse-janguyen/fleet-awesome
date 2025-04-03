@@ -7,6 +7,9 @@ labels:
 kuszomize:
   dir: ""
 
+helm:
+  takeOwnership: false
+
 overrideTargets:
   - clusterGroupSelector:
       matchLabels:

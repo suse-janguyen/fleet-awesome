@@ -7,7 +7,7 @@ labels:
 helm:
   repo: http://zotregistry.dev/helm-charts
   chart: zot
-  version: 2.1.2
+  version: 0.1.67
   releaseName: zot
   valuesFrom:
     - configMapKeyRef:

@@ -1,0 +1,26 @@
+---
+defaultNamespace: zot-system
+
+labels:
+  fleet-bundle: zot
+
+helm:
+  repo: http://zotregistry.dev/helm-charts
+  chart: zot
+  version: 2.1.2
+  releaseName: zot
+  valuesFrom:
+    - configMapKeyRef:
+        name: zot-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: zot-values
+#        key: values.yaml
+
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        project-zot.zot: enabled
+
+###

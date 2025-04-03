@@ -23,4 +23,9 @@ overrideTargets:
       matchLabels:
         project-zot.zot: enabled
 
+dependsOn:
+  - selector:
+      matchLabels:
+        fleet-bundle: zot-cmvalues
+
 ###

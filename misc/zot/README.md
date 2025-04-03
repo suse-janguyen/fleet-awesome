@@ -7,4 +7,5 @@ Doccumentation for zot is located at: [https://zotregistry.dev](https://zotregis
 _TODO_
 - [x] configmap, namespace, and values.yaml
 - [ ] testing different values options
+- [ ] common tasks for oci image content as [in the zot docs](https://zotregistry.dev/v2.1.2/user-guides/user-guide-datapath/)
 

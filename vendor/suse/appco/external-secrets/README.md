@@ -11,6 +11,7 @@ _TODO_
 - [x] pre-configure secret with appco auth
 - [x] pre-configure configmap with gloabal.`imagePullSecrets` ... (accesstoken, serviceacct gives 403)
 - [x] tests with K8S 1.30, 1.31 with ESO 0.14.x 
+- [ ] cert issuer for `bitwarden-sdk-server` to satisfy bitwarden-tls-certs` requirement 
 - [ ] use `PushSecret` to move between clusters and providers, [docs for the CRD](https://external-secrets.io/latest/guides/pushsecrets/)
 
 ...

@@ -1,0 +1,13 @@
+---
+defaultNamespace: sm-operator-system
+
+labels:
+  fleet-bundle: bitwarden-sm-operator
+
+helm:
+  chart: ./sm-operator-0.1.0-Beta.tgz
+  releaseName: sm-operator
+  valuesFiles:
+    - values00.yaml
+
+###

@@ -1,0 +1,15 @@
+---
+defaultNamespace: cert-manager
+
+labels:
+  fleet-bundle: jetstack.cert-manager
+
+helm:
+  chart: cert-manager
+  repo: https://charts.jetstack.io
+  version: 1.16.4
+  values:
+    crds:
+      enabled: true
+
+###

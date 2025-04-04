@@ -2,7 +2,7 @@
 defaultNamespace: cert-manager
 
 labels:
-  fleet-bundle: cert-manager
+  fleet-bundle: appco.cert-manager
 
 helm:
   chart: oci://dp.apps.rancher.io/charts/cert-manager

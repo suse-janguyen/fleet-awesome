@@ -4,4 +4,8 @@ defaultNamespace: default
 kustomize:
   dir: ""
 
+helm:
+  takeOwnership: false # for any pre-existing namespace
+  releaseName: faw-local-ns
+
 ###

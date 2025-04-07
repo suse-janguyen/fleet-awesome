@@ -1,5 +1,6 @@
 ### Sample Tor Controller (Bugfest)
 
-Note: for demonstration purposes only, and client testing.
+Define Tor instances in your k8s using a set of provided custom resource definitions (tor, onion, onionha, projectconfigs) for experimentation, demonstration, and client testing purposes.
+
 
 ...

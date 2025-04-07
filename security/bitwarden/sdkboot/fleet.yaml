@@ -1,0 +1,10 @@
+---
+defaultNamespace: default
+
+kustomize:
+  dir: ""
+
+helm:
+  releaseName: bwsdk-server-bootstrap
+
+###

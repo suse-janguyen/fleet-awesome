@@ -1,0 +1,6 @@
+---
+resources:
+- https://github.com/external-secrets/bitwarden-sdk-server/raw/refs/heads/main/hack/cluster_issuer.yaml
+- https://github.com/external-secrets/bitwarden-sdk-server/raw/refs/heads/main/hack/bitwarden-certificate.yaml
+
+###

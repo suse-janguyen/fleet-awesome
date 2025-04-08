@@ -6,10 +6,10 @@ The sm-operator uses a controller to synchronize Bitwarden secrets into Kubernet
   * Documentation: https://bitwarden.com/help/secrets-manager-kubernetes-operator/
   * `external-secrets` operator also as a client, requires cert-manager for bitwarden-sdk-server certs
   * `values00.yaml` in the current dir are directly from the documentation example
+  * Note: the `BitwardenSecret` CRD syncs ALL of the secrets owned/readable by a particular machine account, see [this github issue](https://github.com/bitwarden/sm-kubernetes/issues/60) ... for free tier (lab), may want to restrict machine account to 1-3 secrets
 
 _TODO_
 - [ ] can fleet pass the `--devel` option to the helm-controller?  (Beta version in current dir as a workaround).
 - [ ] test the options with the above
-- [ ] install Beta v0.1.0 chart, simulate `--devel` flag for helm
 - [ ] kustomize for sdk-server bootstrap Issuer/Cert, secondary bundle, dependent on label like `bw-sdk-server-bootstrap: true` or similar
 ...

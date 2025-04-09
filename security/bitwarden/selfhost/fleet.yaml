@@ -1,0 +1,15 @@
+---
+defaultNamespace: bitwarden
+
+labels:
+  fleet-bundle: bitwarden-selfhost
+
+helm:
+  chart: self-host
+  repo: https://charts.bitwarden.com
+  version: 2025.3.1
+  releaseName: bitwarden-selfhost
+  valuesFiles:
+    - default-values.yaml
+
+###

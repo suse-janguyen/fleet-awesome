@@ -4,6 +4,6 @@ Self-Hosted organization for Bitwarden as per [the documentation.](https://bitwa
 
 _TODO_
 - [x] generate minimal values for bundle
-- [ ] example fleet.yaml bundle
+- [x] example fleet.yaml bundle
 
 ...

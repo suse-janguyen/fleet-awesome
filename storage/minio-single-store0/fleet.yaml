@@ -1,0 +1,11 @@
+---
+defaultNamespace: storage
+
+kustomize:
+  dir: ""
+
+helm:
+  releaseName: minio 
+  takeOwnership: false
+
+###

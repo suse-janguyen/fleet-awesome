@@ -1,5 +1,0 @@
-### IstioByExample.dev
-
-* See https://istiobyexample.dev/
-* Choose 4-6 simple examples from the site
-

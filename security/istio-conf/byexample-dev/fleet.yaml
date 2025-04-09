@@ -1,0 +1,18 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: istio-by-example-virtmach
+
+kustomize:
+  dir: "virt-mach"
+
+helm:
+  takeOwnership: false
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        istio-by-example-virtmach: enabled
+
+###

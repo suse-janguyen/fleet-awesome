@@ -1,0 +1,18 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: istio-stripheaders
+
+kustomize:
+  dir: ""
+
+helm:
+  takeOwnership: false
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        istio-stripheaders: enabled
+
+###

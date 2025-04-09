@@ -1,6 +1,0 @@
-### Bitwarden SelfHost
-
-_TODO_
-- [ ] generate minimal values for bundle
-
-...

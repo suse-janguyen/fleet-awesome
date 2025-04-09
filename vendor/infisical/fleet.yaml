@@ -1,0 +1,14 @@
+---
+defaultNamespace: infisical
+
+labels:
+  fleet-bundle: infisical
+
+helm: 
+  chart: infisical
+  repo: https://dl.cloudsmith.io/public/infisical/helm-charts/helm/charts/
+  version: 0.4.2
+  releaseName: infisical
+  takeOwnership: false
+
+###

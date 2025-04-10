@@ -2,7 +2,7 @@
 defaultNamespace: external-secrets
 
 labels:
-  fleet-bundle: external-secrets
+  fleet-bundle: appco-external-secrets
 
 helm:
   chart: oci://dp.apps.rancher.io/charts/external-secrets-operator
@@ -20,6 +20,6 @@ helm:
 overrideTargets:
   - clusterGroupSelector:
       matchLabels:
-        external-secrets: enabled
+        appco.external-secrets: enabled
 
 ###

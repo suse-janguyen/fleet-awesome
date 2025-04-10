@@ -16,6 +16,6 @@ Secrets should never live in git or any repo, see [the fleet docs](https://fleet
 _TODO_
 - [x] local Kustomize manifests
 - [ ] test moving between local/agents, different namespaces, `BundleNamespaceMapping` [documentation](https://fleet.rancher.io/multi-user#allow-access-to-clusters)
-
+- [ ] secrets workflow can be a series of bootstrap objects, like `GitRepo` that can also populate a namespace with the secret, any configmaps (for `valuesFrom`), file these GitRepo examples under fleet-controller or security/secrets?
 
 ...

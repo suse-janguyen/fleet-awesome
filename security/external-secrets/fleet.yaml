@@ -1,0 +1,25 @@
+---
+defaultNamespace: external-secrets
+
+labels:
+  fleet-bundle: external-secrets
+
+helm:
+  repo: https://charts.external-secrets.io
+  chart: external-secrets
+  version: 0.15.1
+  releaseName: external-secrets-operator
+  valuesFrom:
+    - configMapKeyRef:
+        name: external-secrets-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: external-secrets-values
+#        key: values.yaml
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        external-secrets: enabled
+
+###

@@ -1,0 +1,24 @@
+---
+defaultNamespace: bw-sdk-server
+
+labels:
+  fleet-bundle: bw-sdk-server
+
+helm:
+  chart: oci://ghcr.io/bw-sdk-server/charts/bitwarden-sdk-server:v0.4.0
+  releaseName: bw-sdk-server
+  takeOwnership: false
+  valuesFrom:
+    - configMapKeyRef:
+        name: bw-sdk-server-values
+        key: values.yaml
+#    - secretKeyRef:
+#        name: bw-sdk-server-values
+#        key: values.yaml
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        bitwarden-sdk-server: enabled
+
+###

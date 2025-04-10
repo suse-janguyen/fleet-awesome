@@ -1,0 +1,14 @@
+---
+defaultNamespace: openziti
+
+labels:
+  fleet-bundle: zrok
+
+helm: 
+  chart: zrok
+  repo: https://docs.openziti.io/helm-charts/
+  version: 1.0.0
+  releaseName: zrok
+  takeOwnership: false
+
+###

@@ -1,9 +1,9 @@
 ---
 configMapGenerator:
-- name global-cidr
+- name: kubevip
   literals:
-  - cidr-global: 192.168.100.220/29
-##- range-global: 192.168.100.220-192.168.100.230
+    - cidr-global=192.168.100.220/29
+##    - range-global=192.168.100.220-192.168.100.230
 generatorOptions:
   disableNameSuffixHash: true
 

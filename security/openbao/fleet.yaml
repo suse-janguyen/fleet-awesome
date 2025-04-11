@@ -9,5 +9,8 @@ helm:
   repo: https://openbao.github.io/openbao-helm
   version: 0.10.1
   releaseName: openbao
+  takeOwnership: false
+##  valuesFiles:
+##    - values.yaml
 
 ###

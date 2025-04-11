@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coredns-custom
+  namespace: kube-system
+data:
+  log.override: |
+    log
+    forward . tls://9.9.9.9 { 
+      tls_servername dns.quad9.net 
+      health_check 22s
+    }
+  gxize.server: |
+    gxize.local:53 {
+      forward . 10.16.87.254 { 
+        prefer_udp
+      }
+    } 
+### 

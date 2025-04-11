@@ -1,6 +1,5 @@
 ---
-defaultNamespace: default
-namespace: dns-pihole
+defaultNamespace: dns-pihole
 
 labels:
   fleet-bundle: pihole
@@ -10,6 +9,7 @@ helm:
   repo: https://mojo2600.github.io/pihole-kubernetes/
   version: 2.29.1
   releaseName: pihole
+  takeOwnership: false
 
 overrideTargets:
   - clusterGroupSelector:

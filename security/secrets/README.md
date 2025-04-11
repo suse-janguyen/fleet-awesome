@@ -2,7 +2,7 @@
 
 Secrets should never live in git or any repo, see [the fleet docs](https://fleet.rancher.io/gitrepo-add#storing-credentials-in-git), the workflow for secrets management should be separate. There are many best-practice options for this unique workflow.
 
-Every environment's choice of secrets workflow will be context-dependent. In a Lab or Support-Replication environment, simplicity is a key factor
+Every environment's choice of secrets workflow will be context-dependent. In a Lab or Support-Replication environment, simplicity is a key factor, chose the best-suited option for the situation.
 
 
 * SOPS controller, with AGE or GPG encryption

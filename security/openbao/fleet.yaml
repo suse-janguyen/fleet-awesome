@@ -1,0 +1,13 @@
+---
+defaultNamespace: bao
+
+labels:
+  fleet-bundle: openbao
+
+helm:
+  chart: openbao
+  repo: https://openbao.github.io/openbao-helm
+  version: 0.10.1
+  releaseName: openbao
+
+###

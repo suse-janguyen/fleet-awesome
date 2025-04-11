@@ -1,13 +1,12 @@
 ### OpenBao
  
-  * Helm Chart Install: 
- 
-   ``` 
-       $ helm repo add openbao https://openbao.github.io/openbao-helm
-       $ helm install openbao openbao/openbao 
-       ...
-   ```
+Manage, store, and distribute sensitive data with OpenBao
+OpenBao is an open source, community-driven fork of Vault managed by the Linux Foundation.
 
   * Docs: https://openbao.org/docs/platform/k8s/helm/
 
  
+_TODO_
+- [ ] test standalone lab install with filestorage backend
+
+...

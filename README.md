@@ -31,9 +31,10 @@ Initially, the primary topics for the repo are Infra and Vendor/Application Coll
  
 ## TODO: April 2025
  
-- [ ] Edit: focus on secrets' workflow ... ~secrets `valuesFrom` in addition to ConfigMap~ 
+- [x] Edit: focus on secrets' workflow ... ~secrets `valuesFrom` in addition to ConfigMap~ 
+- [x] separate development bootstrap workflow, secrets, infra, etc
 - [ ] CRD flowchart diagram
-- [ ] Secrets management, downstream config separation, general-asset variable templating
+- [ ] ~Secrets management, downstream config separation, general-assets~ ... Focus -- variable templating
 - [ ] Target ClusterGroup Labels categorization, webhook polling tests, cluster-specific variable templating
 - [ ] security signatures, sha256sum checksum, provenance ... auto-generate via CI-actions/workflows
 

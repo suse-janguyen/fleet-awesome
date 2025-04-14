@@ -1,6 +1,5 @@
 ---
 defaultNamespace: default
-namespace: default
 
 labels:
   fleet-bundle: my-excalidraw
@@ -14,6 +13,7 @@ helm:
         name: my-excalidraw-values
         key: values.yaml
   releaseName: my-excalidraw
+  takeOwnership: false
 
 overrideTargets:
   - clusterGroupSelector:

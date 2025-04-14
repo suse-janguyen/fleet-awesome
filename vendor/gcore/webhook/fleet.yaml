@@ -1,6 +1,5 @@
 ---
 defaultNamespace: cert-manager
-namespace: cert-manager
 
 labels:
   fleet-bundle: gcore-webhook
@@ -10,6 +9,7 @@ helm:
   repo: https://github.com/G-Core/cert-manager-webhook-gcore/tree/master/deploy/helm
   version: 0.1.0
   releaseName: gcore-webhook
+  takeOwnership: false
   
   values:
     groupName: goatherd-casa  # match the groupName for Issuer/ClusterIssuer

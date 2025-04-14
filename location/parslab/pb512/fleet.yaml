@@ -1,6 +1,5 @@
 ---
 defaultNamespace: default
-namespace: default
 
 labels:
   fleet-bundle: my-excalidraw
@@ -10,6 +9,7 @@ helm:
   repo: https://pmoscode-helm.github.io/excalidraw/
   version: 0.1.1
   releaseName: my-excalidraw
+  takeOwnership: false
 
 overrideTargets:
   - name: my-excalidraw

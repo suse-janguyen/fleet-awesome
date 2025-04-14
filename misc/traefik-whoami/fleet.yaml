@@ -6,7 +6,7 @@ kustomize:
   dir: ""
 
 helm:
-  release-name: traefik-whoami
+  releaseName: traefik-whoami
   takeOwnership: false
 
 ###

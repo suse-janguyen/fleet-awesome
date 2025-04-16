@@ -1,2 +1,0 @@
-- fleet bundle with bootstrapped secrets
-- or a combination of label-variable template

@@ -10,5 +10,16 @@ helm:
   version: 1.0.0
   releaseName: zrok
   takeOwnership: false
+  valuesFile:
+    - values-ingress-nginx.yaml
+  values:
+    - ziti.advertisedHost: ziti.controller-client.openziti.svc.cluster.local
+    - ziti.password: changemeimmediatelyplease
+    - dnsZone: zrok.192.168.49.2.sslip.io
+    - controller.ingress.hosts[0]: api.zrok.192.168.49.2.sslip.io
+##  valuesFrom:
+##    - configMapKeyRef:
+##      name: zrok-values
+##      key: values.yaml
 
 ###

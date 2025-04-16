@@ -1,0 +1,14 @@
+---
+defaultNamespace: cloudflare
+
+labels:
+  fleet-bundle: cloudflared
+
+helm:
+  releaseName: cloudflared
+  takeOwnership: false
+
+kustomize:
+  dir: ""
+
+###

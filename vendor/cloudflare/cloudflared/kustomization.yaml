@@ -1,4 +1,10 @@
 ---
 resources:
 - https://raw.githubusercontent.com/cloudflare/argo-tunnel-examples/refs/heads/master/named-tunnel-k8s/cloudflared.yaml
+
+images:
+- name: cloudflare/cloudflared
+  newName: cloudflare/cloudflared
+  newTag: 2025.4.0
+
 ###

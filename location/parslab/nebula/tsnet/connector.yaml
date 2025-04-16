@@ -1,0 +1,10 @@
+---
+apiVersion: tailscale.com/v1alpha1
+kind: Connector
+metadata:
+  name: nebula-net
+spec:
+  subnetRouter:
+    advertiseRoutes:
+      - "10.144.0.0/16"
+###

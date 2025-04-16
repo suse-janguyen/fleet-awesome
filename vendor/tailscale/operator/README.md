@@ -2,10 +2,9 @@
 
 Tailscale Kubernetes Operator.
 
-[Documentation](https://tailscale.com/kb/1236/kubernetes-operator)
+[Documentation](https://tailscale.com/kb/1236/kubernetes-operator) as a KB article.
+[Github Repo](https://github.com/tailscale/tailscale/blob/main/cmd/k8s-operator/deploy/) for the helm chart.
 
-_TODO_
-- [ ] helm value `ingressClass.enabled`: true as default
-- [ ] helm values `oauth.clientId` and `oauth.clientSecret` as synced secrets downstream
-- [ ] depends on secrets management for auth credentials
-...
+* Chart will mount `oauth.clientId` and `oauth.clientSecret` values inside `oauthSecretVolume` by default.
+* Value `ingressClass.enabled`: true as default
+

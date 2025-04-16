@@ -1,8 +1,8 @@
 ---
-defaultNamespace: default
+defaultNamespace: ngrok-operator
 
 labels:
-  fleet-bundle: ngrok-controller
+  fleet-bundle: ngrok-operator
 
 helm:
   repo: https://charts.ngrok.com

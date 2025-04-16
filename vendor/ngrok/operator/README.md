@@ -1,4 +1,4 @@
-### Ngrok Controller
+### Ngrok Operator
 
 Ngrok tunnel management controller for Kubernetes Ingress.
 

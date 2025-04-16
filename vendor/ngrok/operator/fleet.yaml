@@ -1,0 +1,22 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: ngrok-controller
+
+helm:
+  repo: https://charts.ngrok.com
+  chart: ngrok-operator
+  version: 0.17.1
+  releaseName: ngrok-operator
+  takeOwnership: false
+  values:
+    credentials:
+      secret:
+        name: ngrok-operator-credentials
+##  valuesFrom:
+##    - configMapKeyRef:
+##      name: ngrok-operator-values
+##      key: values.yaml
+
+###

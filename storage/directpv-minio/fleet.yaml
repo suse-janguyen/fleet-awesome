@@ -1,0 +1,14 @@
+---
+defaultNamespace: directpv
+
+labels:
+  fleet-bundle: minio-directpv
+
+helm:
+  takeOwnership: false
+  releaseName: minio-directpv
+
+kustomize:
+  dir: ""
+
+###

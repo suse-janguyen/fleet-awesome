@@ -1,11 +1,14 @@
 ---
 defaultNamespace: storage
 
+labels:
+  fleet-bundle: minio-single
+
 kustomize:
   dir: ""
 
 helm:
-  releaseName: minio 
+  releaseName: minio-single 
   takeOwnership: false
 
 ###

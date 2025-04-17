@@ -1,0 +1,14 @@
+---
+defaultNamespace: nfs-provisioner
+
+labels:
+  fleet-bundle: nfs-subdir-external-prov
+
+kustomize:
+  dir: ""
+
+helm:
+  releaseName: nfs-subdir-ext-prov
+  takeOwnership: false
+
+###

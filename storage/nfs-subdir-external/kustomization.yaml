@@ -1,3 +1,4 @@
+---
 namespace: nfs-provisioner
 resources:
   - github.com/kubernetes-sigs/nfs-subdir-external-provisioner//deploy
@@ -11,3 +12,5 @@ patches:
     - op: replace
       path: /metadata/name
       value: nfs-provisioner
+
+###

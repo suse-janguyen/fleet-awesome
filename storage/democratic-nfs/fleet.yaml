@@ -1,0 +1,22 @@
+---
+defaultNamespace: democratic-csi
+
+labels:
+  fleet-bundle: democratic-csi-nfs-client
+
+helm:
+  chart: democratic-csi
+  repo: https://democratic-csi.github.io/charts/
+  version: 0.15.0
+  valuesFiles:
+    - values.yaml
+    - nfs-client-lab-values.yaml
+  takeOwnership: false
+  releaseName: democratic-nfs
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        democratic-csi: enabled
+
+###

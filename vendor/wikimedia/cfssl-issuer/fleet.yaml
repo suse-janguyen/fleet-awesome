@@ -1,0 +1,18 @@
+---
+defaultNamespace: cert-manager
+
+labels:
+  fleet-bundle: cfssl-issuer
+
+helm:
+  repo: https://helm-charts.wikimedia.org/stable
+  chart: cfssl-issuer
+  version: 0.4.3
+  takeOwnership: false
+
+dependsOn:
+  - selector:
+      matchLabels:
+        fleet-bundle: cfssl-issuer-crds
+
+###

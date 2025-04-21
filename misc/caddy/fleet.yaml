@@ -1,0 +1,20 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: caddy-server
+
+helm:
+  chart: ./caddy-0.1.2.tgz
+  releaseName: caddy-server
+  takeOwnership: false
+#  valuesFrom:
+#    - configMapKeyRef:
+#        name: caddy-server-values
+#        key: values.yaml
+#    - secretKeyRef:
+#        name: caddy-server-values
+#        key: values.yaml
+
+
+###

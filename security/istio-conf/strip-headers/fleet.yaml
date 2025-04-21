@@ -9,6 +9,7 @@ kustomize:
 
 helm:
   takeOwnership: false
+  releaseName: istio-stripheaders
 
 overrideTargets:
   - clusterGroupSelector:

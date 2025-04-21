@@ -6,5 +6,6 @@ kustomize:
 
 helm:
   takeOwnership: false
+  releaseName: ingress-nightmare
 
 ###

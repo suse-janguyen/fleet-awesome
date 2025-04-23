@@ -9,6 +9,7 @@ helm:
   chart: nats
   version: 1.3.2
   releaseName: nats
+  takeOwnership: false
   valuesFrom:
     - configMapKeyRef:
         name: nats-values

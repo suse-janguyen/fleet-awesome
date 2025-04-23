@@ -1,0 +1,8 @@
+---
+resources:
+ - l2advertise/IPAddressPool.yaml
+ - l2advertise/L2Advertisement.yaml
+ - services/ServiceMinioVIP.yaml
+ - services/ServicePiholeVIP.yaml
+
+###

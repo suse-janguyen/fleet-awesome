@@ -1,0 +1,14 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: metallb-l2adv
+
+helm:
+  releaseName: metallb-l2adv
+  takeOwnership: false
+
+kustomize:
+  dir: ""
+
+###

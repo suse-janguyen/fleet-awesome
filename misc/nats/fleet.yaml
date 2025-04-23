@@ -22,6 +22,6 @@ helm:
 overrideTargets:
   - clusterGroupSelector:
       matchLabels:
-        appco.nats: enabled
+        natsio.nats: enabled
 
 ###

@@ -1,0 +1,24 @@
+---
+apiVersion: metallb.io/v1beta2
+kind: BGPPeer
+metadata:
+  name: erx1
+  namespace: metallb-system
+spec:
+  myASN: 65020
+  peerASN: 65020
+  peerAddress: 10.16.87.101
+
+###
+---
+apiVersion: metallb.io/v1beta2
+kind: BGPPeer
+metadata:
+  name: hexs760
+  namespace: metallb-system
+spec:
+  myASN: 65020
+  peerASN: 65020
+  peerAddress: 10.16.87.211
+
+###

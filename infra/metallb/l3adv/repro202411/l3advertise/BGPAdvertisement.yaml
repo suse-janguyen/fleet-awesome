@@ -1,0 +1,11 @@
+---
+apiVersion: metallb.io/v1beta1
+kind: BGPAdvertisement
+metadata:
+  name: 1623-adv
+  namespace: metallb-system
+spec:
+  ipAddressPools:
+  - 1623-pool
+
+###

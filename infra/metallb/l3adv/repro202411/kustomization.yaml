@@ -1,0 +1,7 @@
+---
+resources:
+ - l3advertise/IPAddressPool.yaml
+ - l3advertise/BGPPeers.yaml
+ - l3advertise/BGPAdvertisement.yaml
+
+###

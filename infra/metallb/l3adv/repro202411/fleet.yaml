@@ -2,10 +2,10 @@
 defaultNamespace: metallb-system
 
 labels:
-  fleet-bundle: metallb-l2adv
+  fleet-bundle: metallb-l3adv
 
 helm:
-  releaseName: metallb-l2adv
+  releaseName: metallb-l3adv
   takeOwnership: false
 
 kustomize:

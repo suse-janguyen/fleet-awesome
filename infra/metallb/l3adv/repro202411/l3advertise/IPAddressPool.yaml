@@ -1,0 +1,11 @@
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: 1623-pool
+  namespace: metallb-system
+spec:
+  addresses:
+  - 10.16.23.232/29
+
+###

@@ -7,6 +7,10 @@ labels:
 kustomize:
   dir: ""
 
+helm:
+  releaseName: haproxy-ingress-gwapi
+  takeOwnership: false
+
 overrideTargets:
   - clusterGroupSelector:
       matchLabels:

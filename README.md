@@ -5,14 +5,11 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
 
 ## Structure 
 
- * Infra covers infrastructure-related assets, including CNI configurations, K8s distributions, dual-stack, and ingresses.
- * Location is for cloud-providers, on-premises environments, homelab, KVM, Harvester.
- * Misc is for any topic or asset that does not fit into other categories, or upstream open source projects that might be covered in AppCo.
- * Security for those related topics, secrets, service mesh, mtls.
- * Storage and CSI-related assets, for options in a homelab like minio and NFS.
- * Vendor for vendor-specific assets which may or may not be open source, or have a vendor-component in the asset, manifests, or charts.  The main example is Application Collection.
-
-Initially, the primary topics for the repo are Infra and Vendor/Application Collection.
+ * _Infra_ - infrastructure-related assets, including CNI configurations, K8s distributions, dual-stack, and ingresses.
+ * _Misc_ - any example or asset that does not fit into other categories, or upstream open source projects that might be covered in AppCo.
+ * _Security_ - security-focused and other related topics, secrets, service mesh, mtls.
+ * _Storage_ - CSI-related assets, focusing options for a homelab like minio and NFS.
+ * _Vendor_ - any vendor-specific assets which may or may not be open source, or have a vendor-component in the asset, manifests, or charts.  The primary example is Application Collection.
 
 ## TODO: March 2025
 

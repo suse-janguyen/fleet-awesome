@@ -8,6 +8,7 @@ helm:
   chart: oci://ghcr.io/haproxytech/helm-charts/kubernetes-ingress
   version: 1.44.2
   releaseName: haproxy-ingress
+  waitForJobs: false
   values:
     controller:
       replicaCount: 1

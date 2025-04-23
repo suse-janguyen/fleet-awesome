@@ -6,7 +6,7 @@ labels:
 
 helm:
   chart: oci://ghcr.io/haproxytech/helm-charts/kubernetes-ingress
-  version: 1.44.2
+  version: 1.44.3
   releaseName: haproxy-ingress
   takeOwnership: false
   waitForJobs: false

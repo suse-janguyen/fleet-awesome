@@ -2,7 +2,7 @@
 
 The k6-operator uses two CRDs, `TestRun` and  `PrivateLoadZones`, with the latter integrated with Grafana Cloud K6, this repo covers an example of the TestRun custom resource.
 
-[Documentation](https://grafana.com/docs/k6/latest/set-up/set-up-distributed-k6/install-k6-operator/)
+[Installation](https://grafana.com/docs/k6/latest/set-up/set-up-distributed-k6/install-k6-operator/)
 
 ```
 helm install step
@@ -17,8 +17,6 @@ kubectl create configmap breakpoint --from-file=breakpoint.js --dry-run=client -
 
 ```
 
-_TODO_
-- [x] move test.js files into ConfigMap, refrenced by TestRun CRD.
-- [x] fleet bundle for operator and then TestRun example (`dependsOn`)
+[TestRun CRD Information](https://grafana.com/docs/k6/latest/set-up/set-up-distributed-k6/usage/executing-k6-scripts-with-testrun-crd/#run-k6-scripts-with-testrun-crd)
 
-...
+

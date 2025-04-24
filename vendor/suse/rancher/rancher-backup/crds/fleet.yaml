@@ -5,7 +5,7 @@ labels:
   fleet-bundle: rancher-backuprestore-operator-crd
 
 helm:
-  chart: rancher-backup-crds
+  chart: rancher-backup-crd
   repo: https://charts.rancher.io
   version: 105.0.2+up6.0.2
   releaseName: rancher-backup-crd

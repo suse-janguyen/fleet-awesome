@@ -1,0 +1,14 @@
+---
+defaultNamespace: fleet-default
+
+labels:
+  fleet-bundle: downstream-rancher-monitoring
+
+helm:
+  releaseName: downstream-rancher-monitoring
+  takeOwnership: false
+
+kustomize:
+  dir: ""
+
+###

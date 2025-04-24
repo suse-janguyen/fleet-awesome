@@ -1,0 +1,12 @@
+---
+defaultNamespace: kube-system
+
+kustomize:
+  dir: ""
+
+helm:
+  takeOwnership: false
+  releaseName: traefik-cfdns01
+
+###
+

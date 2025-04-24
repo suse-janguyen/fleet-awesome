@@ -1,0 +1,21 @@
+---
+defaultNamesapce: cattle-resources-system
+
+labels:
+  fleet-bundle: rancher-backuprestore-operator
+
+helm:
+  chart: rancher-backup
+  repo: https://charts.rancher.io
+  version: 105.0.2+up6.0.2
+  releaseName: rancher-backup
+
+overrideTargets:
+  - clusterName: local
+
+dependsOn:
+  - selector:
+      matchLabels:
+        fleet-bundle: rancher-backuprestore-operator-crd
+
+###

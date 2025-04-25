@@ -1,0 +1,14 @@
+---
+defaultNamespace: kube-system
+
+labels:
+  fleet-bundle: cilium-bgp
+
+helm:
+  releaseName: cilium-bgp
+  takeOwnership: false
+
+kustomize:
+  dir: ""
+
+###

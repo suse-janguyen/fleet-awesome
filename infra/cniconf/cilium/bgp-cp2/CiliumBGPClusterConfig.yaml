@@ -1,0 +1,19 @@
+---
+apiVersion: cilium.io/v2alpha1
+kind: CiliumBGPClusterConfig
+metadata:
+  name: cilium-bgp
+spec:
+  nodeSelector:
+    matchLabels:
+      rack: parslab-bgp
+  bgpInstances:
+  - name: "parslab-65020"
+    localASN: 65020
+    peers:
+    - name: "erx1-routeros"
+      peerASN: 65020
+      peerAddress: 10.16.87.101
+      peerConfigRef:
+        name: "peer-group-1"
+###

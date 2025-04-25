@@ -1,0 +1,10 @@
+---
+resources:
+  - helmchartconfig.yaml
+  - CiliumBGPClusterConfig.yaml
+  - CiliumBGPPeerConfig.yaml
+  - CiliumBGPAdvertisement.yaml
+  - CiliumLoadBalancerIPPool.yaml
+  - ServiceExcalidrawVIP.yaml
+
+###

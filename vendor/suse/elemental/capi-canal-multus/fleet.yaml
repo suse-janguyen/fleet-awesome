@@ -1,0 +1,14 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: capi-canal-multus
+
+helm:
+  releaseName: capi-canal-multus
+  takeOwnership: false
+
+kustomize:
+  dir: ""
+
+###

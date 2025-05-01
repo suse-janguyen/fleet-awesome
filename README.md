@@ -11,6 +11,14 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
  * _Storage_ - CSI-related assets, focusing options for a homelab like minio and NFS.
  * _Vendor_ - any vendor-specific assets which may or may not be open source, or have a vendor-component in the asset, manifests, or charts.  The primary example is Application Collection.
 
+
+## QuickStart
+
+ * Fork the repository
+ * Add a git remote with a unique name for your new fork
+ * Create a branch for your changes and testing
+ * Create Pull Requests (PRs) in GitHub for submitting your branch changes
+
 ## TODO: March 2025
 
 - [x] collect and organize initial configurations and charts/manifests/kustomizations

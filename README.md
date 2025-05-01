@@ -13,8 +13,8 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
  * (Optional) Create Pull Requests (PRs) in GitHub for submitting your branch changes
 
 #### Fleet ####
- * For each project, create one or more `GitRepo` resources, examples under `/misc/location/parslab/sublevel/fleet-controller`
-   * the examples follow convention fawXX, ie `faw17-some-name.yaml` not a requirement, a suggestion
+ * For each project, create one or more `GitRepo` resources, see `GenericExample-ClusterGroup.yaml` and `GenericExample-GitRepo.yaml` in the main repo root folder
+   * more examples under `/misc/location/parslab/sublevel/fleet-controller`
  * Each GitRepo can have one or more paths to where the recipes live under your new forked repo
  * Assign `Clusters` (`clusters.fleet.cattle.io`) to `ClusterGroups` with labels
    * Fleet pulls the repo data with a `GitJob`, then creates `Bundles` from `fleet.yaml` files for HelmCharts & Kustomizations

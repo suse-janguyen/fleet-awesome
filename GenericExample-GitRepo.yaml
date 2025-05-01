@@ -1,0 +1,22 @@
+---
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  annotations:
+    field.cattle.io/description: github generic-example
+  name: generic-example
+  namespace: fleet-default
+spec:
+  branch: main
+  paths:
+  - /local-path-prov
+  pollingInterval: 300s
+  repo: https://github.com/flrichar/fleet-awesome/storage/local-path-prov
+  targets:
+  - name: localpath
+    clusterGroupSelector:
+      matchLabels:
+        rancher-localpath-prov: enabled
+
+###
+

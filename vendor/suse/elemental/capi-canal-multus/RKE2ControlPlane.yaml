@@ -1,0 +1,12 @@
+---
+apiVersion: controlplane.cluster.x-k8s.io/v1alpha1
+kind: RKE2ControlPlane
+metadata:
+  name: single-node-cluster
+  namespace: default
+spec:
+  serverConfig:
+    cni: calico
+    cniMultusEnable: true
+
+###

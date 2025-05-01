@@ -1,0 +1,18 @@
+---
+defaultNamespace: volsync-system
+
+labels:
+  fleet-bundle: backube-volsync
+
+helm:
+  chart: backube/volsync
+  repo: https://backcube.github.io/helm-charts/
+  version: 0.12.1
+  releaseName: backube-volsync
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        backube.volsync: enabled
+
+###

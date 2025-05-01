@@ -9,9 +9,9 @@ metadata:
 spec:
   branch: main
   paths:
-  - /local-path-prov
+  - /storage/local-path-prov
   pollingInterval: 300s
-  repo: https://github.com/flrichar/fleet-awesome/storage/local-path-prov
+  repo: https://github.com/flrichar/fleet-awesome
   targets:
   - name: localpath
     clusterGroupSelector:

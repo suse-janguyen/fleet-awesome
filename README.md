@@ -25,8 +25,8 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
    * the examples follow convention fawXX, ie `faw17-some-name.yaml` not a requirement, a suggestion
  * Each GitRepo can have one or more paths to where the recipes live under your new forked repo
  * Assign `Clusters` (`clusters.fleet.cattle.io`) to `ClusterGroups` with labels
- * Fleet should create `Bundles` from `fleet.yaml` files, for HelmCharts & Kustomizations
- * Final result is a `BundleDeployment` to the Downstream cluster
+ * Fleet pulls the repo data with a `GitJob`, then creates `Bundles` from `fleet.yaml` files for HelmCharts & Kustomizations
+ * Final result is a `BundleDeployment` send to the fleet-agent in the Downstream cluster for the target defined in the `ClusterGroup`
   
 
 ## TODO: March 2025

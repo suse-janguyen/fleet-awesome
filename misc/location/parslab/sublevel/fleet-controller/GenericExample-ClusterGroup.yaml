@@ -1,0 +1,14 @@
+---
+kind: ClusterGroup
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  labels:
+    rancher-localpath-prov: enabled
+  name: generic-example
+  namespace: fleet-default
+spec:
+  selector:
+    matchLabels:
+      env: generic-example
+
+###

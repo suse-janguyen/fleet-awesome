@@ -1,15 +1,7 @@
 ## Fleet Awesome
 
 A curated list of minimal reproducible examples, managed by SUSE Rancher Fleet. All assets should be quick and minimal, if customization is necessary, allow flexible config through secrets or downstream cluster `ConfigMap` objects.
-Unlike other "awesome-something" lists, the role of Fleet is as a facilitator for gitops operations, the convention, and format of the repo.
-
-## Structure 
-
- * _Infra_ - infrastructure-related assets, including CNI configurations, K8s distributions, dual-stack, and ingresses.
- * _Misc_ - any example or asset that does not fit into other categories, or upstream open source projects that might be covered in AppCo.
- * _Security_ - security-focused and other related topics, secrets, service mesh, mtls.
- * _Storage_ - CSI-related assets, focusing options for a homelab like minio and NFS.
- * _Vendor_ - any vendor-specific assets which may or may not be open source, or have a vendor-component in the asset, manifests, or charts.  The primary example is Application Collection.
+Unlike other "awesome-something" lists, the role of Fleet is as a facilitator for gitops operations. Repository has fleet-focused convention and formatting.
 
 
 ## QuickStart
@@ -21,13 +13,21 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
  * (Optional) Create Pull Requests (PRs) in GitHub for submitting your branch changes
 
 #### Fleet ####
- * For each project, create `GitRepo`, examples under `/misc/location/parslab/sublevel/fleet-controller`
+ * For each project, create one or more `GitRepo` resources, examples under `/misc/location/parslab/sublevel/fleet-controller`
    * the examples follow convention fawXX, ie `faw17-some-name.yaml` not a requirement, a suggestion
  * Each GitRepo can have one or more paths to where the recipes live under your new forked repo
  * Assign `Clusters` (`clusters.fleet.cattle.io`) to `ClusterGroups` with labels
    * Fleet pulls the repo data with a `GitJob`, then creates `Bundles` from `fleet.yaml` files for HelmCharts & Kustomizations
  * Final result is a `BundleDeployment` send to the fleet-agent in the Downstream cluster for the target defined in the `ClusterGroup`
   
+## Category Structure
+
+ * _Infra_ - infrastructure-related assets, including CNI configurations, K8s distributions, dual-stack, and ingresses.
+ * _Misc_ - any example or asset that does not fit into other categories, or upstream open source projects that might be covered in AppCo.
+ * _Security_ - security-focused and other related topics, secrets, service mesh, mtls.
+ * _Storage_ - CSI-related assets, homelab-focused storage options like minio and NFS.
+ * _Vendor_ - any vendor-specific assets which may or may not be open source, or have a vendor-component in the asset, manifests, or charts.  The primary example is Application Collection.
+
 
 ## TODO: March 2025
 

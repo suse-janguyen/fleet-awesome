@@ -18,6 +18,13 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
  * Add a git remote with a unique name for your new fork
  * Create a branch for your changes and testing
  * Create Pull Requests (PRs) in GitHub for submitting your branch changes
+ * For each project, create `GitRepo`, examples under `/misc/location/parslab/sublevel/fleet-controller`
+   * the examples follow convention fawXX, ie `faw17-some-name.yaml` not a requirement, a suggestion
+ * Each GitRepo can have one or more paths to where the recipes live in the repo
+ * Assign `Clusters` (`clusters.fleet.cattle.io`) to `ClusterGroups` with labels
+ * Fleet should create `Bundles` from `fleet.yaml` files, for HelmCharts & Kustomizations
+ * Final result is a `BundleDeployment` to the Downstream cluster
+  
 
 ## TODO: March 2025
 

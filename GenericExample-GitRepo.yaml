@@ -11,7 +11,7 @@ spec:
   paths:
   - /storage/local-path-prov
   pollingInterval: 300s
-  repo: https://github.com/flrichar/fleet-awesome
+  repo: https://github.com/your-username/yourfork-fleet-awesome
   targets:
   - name: localpath
     clusterGroupSelector:

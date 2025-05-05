@@ -1,0 +1,15 @@
+---
+apiVersion: management.cattle.io/v3
+globalRoleName: user
+groupPrincipalName: openldap_group://cn=All Users,ou=Users,o=YOUR-ORG,dc=jumpcloud,dc=com
+kind: GlobalRoleBinding
+metadata:
+  annotations:
+    authz.management.cattle.io/crb-name: cattle-globalrolebinding-all-user
+    cleanup.cattle.io/grbUpgradeCluster: "true"
+    lifecycle.cattle.io/create.mgmt-auth-grb-controller: "true"
+  labels:
+    cattle.io/creator: norman
+  name: all-user
+
+###

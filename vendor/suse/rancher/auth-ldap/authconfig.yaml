@@ -1,0 +1,38 @@
+---
+accessMode: unrestricted
+allowedPrincipalIds:
+- openldap_user://uid=service-guy,ou=Users,o=YOUR-ORG,dc=jumpcloud,dc=com
+apiVersion: management.cattle.io/v3
+connectionTimeout: 5000
+enabled: true
+groupDNAttribute: entryDN
+groupMemberMappingAttribute: member
+groupMemberUserAttribute: entryDN
+groupNameAttribute: cn
+groupObjectClass: groupOfNames
+groupSearchAttribute: cn
+kind: AuthConfig
+metadata:
+  annotations:
+    management.cattle.io/auth-provider-cleanup: unlocked
+  labels:
+    cattle.io/creator: norman
+  name: openldap
+nestedGroupMembershipEnabled: false
+port: 636
+servers:
+- ldap.jumpcloud.com.
+serviceAccountDistinguishedName: uid=service-guy,ou=Users,o=YOUR-ORG,dc=jumpcloud,dc=com
+serviceAccountPassword: cattle-global-data:openldapconfig-serviceaccountpassword
+starttls: false
+tls: true
+type: openLdapConfig
+userDisabledBitMask: 0
+userLoginAttribute: uid
+userMemberAttribute: memberOf
+userNameAttribute: cn
+userObjectClass: inetOrgPerson
+userSearchAttribute: uid|sn|givenName
+userSearchBase: ou=Users,o=YOUR-ORG,dc=jumpcloud,dc=com
+
+###

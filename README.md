@@ -1,7 +1,7 @@
 ## Fleet Awesome
 
-A curated list of minimal reproducible examples, managed by SUSE Rancher Fleet. All assets should be quick and minimal, if customization is necessary, allow flexible config through secrets or downstream cluster `ConfigMap` objects.
-Unlike other "awesome-something" lists, the role of Fleet is as a facilitator for gitops operations. Repository has fleet-focused convention and formatting.
+A curated list of minimal reproducible examples, usable via SUSE Rancher Fleet. All assets are quick and minimal, focusing on a local lab environment. Customization with flexible config through secrets or downstream cluster `ConfigMap` objects. By default the options for the Bundles, _or snippets, recipes_ are opnionated towards operational efficiency, proof-of-concepts or pilot experiments.
+Unlike other "awesome-something" lists, the role of Fleet is as a facilitator for gitops operations with the repository using fleet-focused conventions and formatting.
 
 
 ## QuickStart
@@ -18,7 +18,7 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
  * Each GitRepo can have one or more paths to where the recipes live under your new forked repo
  * Assign `Clusters` (`clusters.fleet.cattle.io`) to `ClusterGroups` with labels
    * Fleet pulls the repo data with a `GitJob`, then creates `Bundles` from `fleet.yaml` files for HelmCharts & Kustomizations
- * Final result is a `BundleDeployment` send to the fleet-agent in the Downstream cluster for the target defined in the `ClusterGroup`
+ * Final result is a `BundleDeployment` sent and deployed by the fleet-agent in the Downstream cluster for the target defined in the `ClusterGroup`
 
 _CRD Flow_
 
@@ -38,6 +38,12 @@ See the Fleet docs about [bundle lifecycle stages](https://fleet.rancher.io/ref-
  * _Storage_ - CSI-related assets, homelab-focused storage options like minio and NFS.
  * _Vendor_ - any vendor-specific assets which may or may not be open source, or have a vendor-component in the asset, manifests, or charts.  The primary example is Application Collection.
 
+### Features
+ 
+ * Avoid longer names for labels and charts with a 63 character limit. Achieved through `helm.releaseName` option.
+ * Avoid clobbering existing resources, through use of `helm.takeOwnership: false` option, for example when a Bundle is deployed into a pre-existing Namespace.
+ * Use of Kustomization configuration options for safer deployment and targeting.
+ * Day Two operations respecting existing Namespaces, Secrets and ConfigMap resources for targeted ClusterGroups.
 
 ## TODO: March 2025
 

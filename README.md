@@ -21,6 +21,7 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
  * Final result is a `BundleDeployment` send to the fleet-agent in the Downstream cluster for the target defined in the `ClusterGroup`
 
 _CRD Flow_
+
 Each snippet or recipe relies on Fleet CRDs to generate and deilver a `Bundle` to the target `Clusters`. 
 
 The Fleet CRDs follow a flow outlined in the diagram below.

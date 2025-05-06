@@ -1,0 +1,12 @@
+---
+# Replace path with regex
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: test-replacepath-regex
+spec:
+  replacePathRegex:
+    regex: ^/gitjob/(.*)
+    replacement: /other/$1
+
+###

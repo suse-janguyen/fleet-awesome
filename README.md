@@ -1,6 +1,6 @@
 ## Fleet Awesome
 
-A curated list of minimal reproducible examples, usable via SUSE Rancher Fleet. All assets are quick and minimal, focusing on a local lab environment. Customization with flexible config through secrets or downstream cluster `ConfigMap` objects. By default the options for the Bundles, _or snippets, recipes_ are opnionated towards operational efficiency, proof-of-concepts or pilot experiments.
+A curated list of minimal reproducible examples, usable via SUSE Rancher Fleet. All assets are quick and minimal, focusing on a local lab environment. Customization with flexible config through secrets or downstream cluster `ConfigMap` objects. By default the options for the Bundles, _or snippets, recipes,_ are opnionated towards operational efficiency, proof-of-concepts or pilot experiments.
 Unlike other "awesome-something" lists, the role of Fleet is as a facilitator for gitops operations with the repository using fleet-focused conventions and formatting.
 
 
@@ -23,8 +23,7 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
 _CRD Flow_
 
 Each snippet or recipe relies on Fleet CRDs to generate and deilver a `Bundle` to the target `Clusters`. 
-
-The Fleet CRDs follow a flow outlined in the diagram below.
+ * See the Fleet CRD workflow outlined in the diagram below.
 
 ![Fleet CRD Flow](crdflow-faw.png "Fleet CRD Flow")
 
@@ -68,7 +67,7 @@ See the Fleet docs about [bundle lifecycle stages](https://fleet.rancher.io/ref-
 
 ## TODO: May 2025
 
-- [ ] ~quickstart (done)~ and CRD flowcharts explainations as mini "how-to"
+- [x] ~quickstart (done)~ and CRD flowcharts explainations as mini "how-to"
 - [ ] var templating, signatures, ci-workflow support bootstrap validation
 - [ ] Component Testing, Automation (generic CI), QA functionality
 - [ ] CI Pipeline, inter-team collaboration, possible presentation, PR/Forks of repo content

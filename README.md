@@ -13,12 +13,16 @@ Unlike other "awesome-something" lists, the role of Fleet is as a facilitator fo
  * (Optional) Create Pull Requests (PRs) in GitHub for submitting your branch changes
 
 #### Fleet ####
+ * If you have Rancher installed, you already have a Fleet Controller on the Local Cluster
+   * The UI option for Continuous Delivery is Fleet's _"SailBoat"_ icon
+   * connections established to Downstream Clusters with their Fleet-Agent
  * For each project, create one or more `GitRepo` resources, see `GenericExample-ClusterGroup.yaml` and `GenericExample-GitRepo.yaml` in the main repo root folder
    * more examples under `/misc/location/parslab/sublevel/fleet-controller`
  * Each GitRepo can have one or more paths to where the recipes live under your new forked repo
  * Assign `Clusters` (`clusters.fleet.cattle.io`) to `ClusterGroups` with labels
    * Fleet pulls the repo data with a `GitJob`, then creates `Bundles` from `fleet.yaml` files for HelmCharts & Kustomizations
  * Final result is a `BundleDeployment` sent and deployed by the fleet-agent in the Downstream cluster for the target defined in the `ClusterGroup`
+   * Here _Target_ is a reference to a downstream Cluster and/or Namespaces on that cluster, depending on wether `Bundles` need to deploy namespaced or cluster-wide resources
 
 _CRD Flow_
 

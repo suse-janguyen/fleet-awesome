@@ -1,0 +1,12 @@
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: haproxy-ingress-values
+  namespace: haproxytech
+data:
+  values.yaml: |
+    crdjob:
+      ttlSecondsAfterFinished: 8640000
+
+###

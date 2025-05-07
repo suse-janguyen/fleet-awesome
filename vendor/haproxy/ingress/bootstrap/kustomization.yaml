@@ -1,0 +1,7 @@
+---
+resources:
+  - Namespace.yaml
+  - ConfigMap.yaml
+namespace: haproxytech
+
+###

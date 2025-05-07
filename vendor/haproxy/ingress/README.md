@@ -6,7 +6,7 @@
 
 #### Bootstrap Namespace & ConfigMap ####
 
-To work around the issue #2051 under Fleet < v0.12.0, bootstrap the target Cluster's Namespace (`haprpoyxtech`) with a ConfigMap named `haproxy-ingress-values`.
+To work around the issue #2051 under Fleet < v0.12.0, bootstrap the target Cluster's Namespace (`haprpoyxtech`) with a ConfigMap named `haproxy-ingress-values`. An example Kustomization is found under the `bootstrap` directory.
 
 ```
 ---

@@ -2,11 +2,26 @@
 
  * [Documentation](https://github.com/haproxytech/helm-charts/tree/main/kubernetes-ingress)
  * [GatewayAPI / GAPI Docs](https://www.haproxy.com/documentation/kubernetes-ingress/gateway-api/enable-gateway-api/) Note: Current supported version is 0.5.1 -- only supporting TCP Route
+ * Fleet [GH Issue #2051](https://github.com/rancher/fleet/issues/2051) for haproxy-ingress `crdjob` pod, fixed in Fleet  > v0.12.0, Rancher 2.12+.
 
-_TODO_ 
-- [x] fleet bundle, to test - bundle name vendor/haproxytech/haproxy-ingress adds too many chars, >63
-- [x] list TCP / GatewayAPI examples (testing... done)
-- [x] workaround with extra ttl time of 10d for Job, mitigate issue #2051
-- [x] update fleet.yaml bundle for `valuesFrom` in addition to `helm.values` ... keeping in mind spacing issues, now includes values from both places, one is a base and other is downstream customization
+#### Bootstrap Namespace & ConfigMap ####
+
+To work around the issue #2051 under Fleet < v0.12.0, bootstrap the target Cluster's Namespace (`haprpoyxtech`) with a ConfigMap named `haproxy-ingress-values`.
+
+```
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: haproxy-ingress-values
+  namespace: haproxytech
+data:
+  values.yaml: |
+    crdjob:
+      ttlSecondsAfterFinished: 8640000
+
+###
+
+```
 
 ...

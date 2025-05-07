@@ -1,0 +1,19 @@
+write-kubeconfig-mode: "0640"
+tls-san:
+  - "apps.org-fqdn.com"
+kube-proxy-arg:
+  - "proxy-mode=ipvs"
+kubelet-arg:
+  - "container-log-max-files=8"
+  - "container-log-max-size=400Mi"
+  - "max-pods=200"
+kube-controller-manager-arg:
+  - "node-cidr-mask-size-ipv4=23"
+  - "node-cidr-mask-size-ipv6=80"
+cluster-cidr: 10.69.0.0/16,fdff:68bb:e67c:ffd2:1069::/64
+service-cidr: 10.70.0.0/16,fdff:68bb:e67c:ffd2:1070::/112
+cluster-dns: 10.70.10.10,fdff:68bb:e67c:ffd2:1070::1010
+node-ip: 10.16.87.143,fdff:68bb:e67c:ffd2:1087::143
+etcd-snapshot-schedule-cron: "0 */8 * * *"
+etcd-snapshot-retention: 6
+cni: cilium

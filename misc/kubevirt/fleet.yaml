@@ -1,0 +1,10 @@
+---
+defaultNamespace: kubevirt
+
+kustomize:
+  dir: ""
+
+helm:
+  releaseName: kubevirt
+
+###

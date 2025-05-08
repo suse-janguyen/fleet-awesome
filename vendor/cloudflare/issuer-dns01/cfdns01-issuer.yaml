@@ -1,0 +1,21 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: cloudflare-dns01
+  namespace: cattle-system
+spec:
+  acme:
+    email: cert-user@gxize.net
+    privateKeySecretRef:
+      name: cfdns01-issuer-account-key
+    server: https://acme-v02.api.letsencrypt.org/directory
+    solvers:
+    - dns01:
+        cloudflare:
+          apiTokenSecretRef:
+            key: api-token
+            name: cloudflare-api-token-secret
+          email: cert-user@gxize.net
+
+###

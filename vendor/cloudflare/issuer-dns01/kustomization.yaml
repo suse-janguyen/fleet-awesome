@@ -1,0 +1,5 @@
+---
+resources:
+  - cfdns01-issuer.yaml
+
+###

@@ -1,0 +1,11 @@
+---
+defaultNamespace: default
+
+kustomize: 
+  dir: ""
+
+helm:
+  takeOwnership: false
+  releaseName: cfdns01-issuer
+
+###

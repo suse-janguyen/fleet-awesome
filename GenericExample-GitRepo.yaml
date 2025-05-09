@@ -9,14 +9,14 @@ metadata:
 spec:
   branch: main
   paths:
-  - /security/openbao
+  - /storage/local-path-prov
   pollingInterval: 300s
-  repo: https://github.com/suse-janguyen/fleet-awesome
+  repo: https://github.com/your-username/yourfork-fleet-awesome
   targets:
-  - name: openbao
+  - name: localpath
     clusterGroupSelector:
       matchLabels:
-        name: security
+        rancher-localpath-prov: enabled
 
 ###
 

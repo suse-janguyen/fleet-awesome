@@ -4,16 +4,16 @@ kind: GitRepo
 metadata:
   annotations:
     field.cattle.io/description: github generic-example
-  name: generic-example
+  name: tf-fleet
   namespace: fleet-default
 spec:
   branch: main
   paths:
-  - /storage/local-path-prov
+  - /security/openbao
   pollingInterval: 300s
   repo: https://github.com/your-username/yourfork-fleet-awesome
-  targets:
-  - name: localpath
-    clusterGroupSelector:
-      matchLabels:
-        rancher-localpath-prov: enabled
+  # targets:
+  # - name: openbao
+  #   clusterGroupSelector:
+  #     matchLabels:
+  #       rancher-localpath-prov: enabled

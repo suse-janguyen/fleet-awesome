@@ -6,7 +6,7 @@ labels:
 
 helm:
   chart: oci://dp.apps.rancher.io/charts/external-secrets-operator
-  version: 0.14.4
+  version: 0.16.2
   releaseName: external-secrets-operator
   valuesFrom:
     - configMapKeyRef:

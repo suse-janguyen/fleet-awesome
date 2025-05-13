@@ -1,0 +1,14 @@
+---
+defaultNamespace: kube-system
+
+labels:
+  fleet-bundle: kube-vip
+
+helm:
+  releaseName: kube-vip
+  takeOwnership: false
+
+kustomize:
+  dir: ""
+
+###

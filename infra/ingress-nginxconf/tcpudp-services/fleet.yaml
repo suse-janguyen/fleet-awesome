@@ -1,0 +1,14 @@
+---
+defaultNamespace: kube-system
+
+labels:
+  fleet-bundle: ingress-nginx-tcpudp-services
+
+helm:
+  releaseName: ingress-nginx-tcpudp-services
+  takeOwnership: false
+
+kustomize:
+  dir: ""
+
+###

@@ -2,12 +2,12 @@
 defaultNamespace: kubevirt
 
 labels:
-  fleet-bundle: kubevirt-crd
+  fleet-bundle: kubevirt
 
 kustomize:
   dir: ""
 
 helm:
-  releaseName: kubevirt-crd
+  releaseName: kubevirt
 
 ###

@@ -1,5 +1,6 @@
 ---
 resources:
+  - Namespace.yaml
   - https://github.com/kubevirt/kubevirt/releases/download/v1.5.1/kubevirt-operator.yaml
 
 ###

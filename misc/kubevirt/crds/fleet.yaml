@@ -9,7 +9,6 @@ kustomize:
 
 helm:
   releaseName: kubevirt-crd
-  takeOwnership: false
 
 dependsOn:
   - selector:

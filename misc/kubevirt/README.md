@@ -11,5 +11,10 @@ Bundle complains Namespace is not owned by Helm, see error below.
 NotReady(1) [Cluster fleet-default/rocky-530: not installed: Unable to continue with install: Namespace "kubevirt" in namespace "" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "kubevirt"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "kubevirt"]
 ```
 
-* Bootstrap Namespace as part of kustomization
+* ~Bootstrap Namespace as part of kustomization~
+
+Or use a Helm Chart, tracked upstream by a few PRs:
+
+* https://github.com/kubevirt/community/pull/224
+* https://github.com/kubevirt/project-infra/pull/4093
 

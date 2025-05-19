@@ -1,0 +1,19 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: otel-ebpf
+
+helm: 
+  chart: opentelemetry-ebpf
+  repo: https://open-telemetry.github.io/opentelemetry-helm-charts
+  version: 0.1.6
+  releaseName: otel-ebpf
+  takeOwnership: false
+
+overrideTargets:
+  - clusterGroupSelector:
+     matchLabels:
+       opentelemetry.otel-ebpf: enabled
+
+###

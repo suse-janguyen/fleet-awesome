@@ -1,0 +1,19 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: otel-demo
+
+helm: 
+  chart: opentelemetry-demo
+  repo: https://open-telemetry.github.io/opentelemetry-helm-charts
+  version: 0.37.1
+  releaseName: otel-demo
+  takeOwnership: false
+
+overrideTargets:
+  - clusterGroupSelector:
+     matchLabels:
+       opentelemetry.otel-demo: enabled
+
+###

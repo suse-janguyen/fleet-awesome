@@ -1,0 +1,18 @@
+---
+defaultNamespace: kubevirt
+
+labels:
+  fleet-bundle: kubevirt
+
+kustomize:
+  dir: ""
+
+helm:
+  releaseName: kubevirt
+
+dependsOn:
+  - selector:
+      matchLabels:
+        fleet-bundle: kubevirt-crd
+
+###

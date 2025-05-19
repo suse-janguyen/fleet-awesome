@@ -1,0 +1,19 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: otel-collector
+
+helm: 
+  chart: opentelemetry-collector
+  repo: https://open-telemetry.github.io/opentelemetry-helm-charts
+  version: 0.125.0
+  releaseName: otel-collector
+  takeOwnership: false
+
+overrideTargets:
+  - clusterGroupSelector:
+     matchLabels:
+       opentelemetry.otel-collector: enabled
+
+###

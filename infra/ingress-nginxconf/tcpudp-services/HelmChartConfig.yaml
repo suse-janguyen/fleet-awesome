@@ -1,0 +1,14 @@
+---
+apiVersion: helm.cattle.io/v1
+kind: HelmChartConfig
+metadata:
+  name: rke2-ingress-nginx
+  namespace: kube-system
+spec:
+  valuesContent: |-
+    controller:
+      extraArgs: 
+        tcp-services-configmap: "kube-system/tcp-services"
+        udp-services-configmap: "kube-system/udp-services"
+
+###

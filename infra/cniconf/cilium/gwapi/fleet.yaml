@@ -1,0 +1,14 @@
+---
+defaultNamespace: kube-system
+
+labels:
+  fleet-bundle: cilium-gwapi
+
+helm:
+  releaseName: cilium-gwapi
+  takeOwnership: false
+
+kustomize:
+  dir: ""
+
+###

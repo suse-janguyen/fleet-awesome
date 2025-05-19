@@ -1,0 +1,19 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: otel-operator
+
+helm: 
+  chart: opentelemetry-operator
+  repo: https://open-telemetry.github.io/opentelemetry-helm-charts
+  version: 0.88.6
+  releaseName: otel-operator
+  takeOwnership: false
+
+overrideTargets:
+  - clusterGroupSelector:
+     matchLabels:
+       opentelemetry.otel-operator: enabled
+
+###

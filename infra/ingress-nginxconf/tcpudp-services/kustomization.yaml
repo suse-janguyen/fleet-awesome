@@ -1,0 +1,7 @@
+---
+resources:
+  - HelmChartConfig.yaml
+  - ConfigMap-tcp-services.yaml
+  - ConfigMap-udp-services.yaml
+
+###

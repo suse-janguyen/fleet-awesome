@@ -4,8 +4,4 @@ Cert-manager creates TLS certificates for workloads in your Kubernetes cluster a
 
 Cert-manager can obtain certificates from a variety of certificate authorities, including: Let's Encrypt, HashiCorp Vault, Venafi and private PKI.
 
-_TODO_
-- [ ] base chart for secrets-management requirements
-- [ ] test options and moving between alt charts
-
 ...

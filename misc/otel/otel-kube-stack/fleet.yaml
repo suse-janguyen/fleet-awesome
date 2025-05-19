@@ -1,0 +1,19 @@
+---
+defaultNamespace: default
+
+labels:
+  fleet-bundle: otel-kube-stack
+
+helm: 
+  chart: opentelemetry-kube-stack
+  repo: https://open-telemetry.github.io/opentelemetry-helm-charts
+  version: 0.5.3
+  releaseName: otel-kube-stack
+  takeOwnership: false
+
+overrideTargets:
+  - clusterGroupSelector:
+     matchLabels:
+       opentelemetry.otel-kube-stack: enabled
+
+###

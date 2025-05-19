@@ -7,7 +7,7 @@ labels:
 helm: 
   chart: zrok
   repo: https://docs.openziti.io/helm-charts/
-  version: 1.0.0
+  version: 1.0.1
   releaseName: zrok
   takeOwnership: false
   valuesFile:

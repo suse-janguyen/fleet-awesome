@@ -1,0 +1,13 @@
+---
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: longhorn
+  namespace: fleet-local
+spec:
+  repo: https://github.com/your-username/fleet-awesome.git
+  revision: main
+  keepResources: true
+  paths:
+  - /storage/longhorn
+###

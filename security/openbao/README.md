@@ -5,8 +5,4 @@ OpenBao is an open source, community-driven fork of Vault managed by the Linux F
 
   * Docs: https://openbao.org/docs/platform/k8s/helm/
 
- 
-_TODO_
-- [ ] test standalone lab install with filestorage backend
-
 ...

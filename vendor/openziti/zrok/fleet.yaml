@@ -10,7 +10,7 @@ helm:
   version: 1.0.1
   releaseName: zrok
   takeOwnership: false
-  valuesFile:
+  valuesFiles:
     - values-ingress-nginx.yaml
   values:
     - ziti.advertisedHost: ziti.controller-client.openziti.svc.cluster.local

@@ -1,0 +1,20 @@
+---
+defaultNamespace: topolvm-system 
+
+labels:
+  fleet-bundle: topolvm
+
+helm:
+  repo: https://topolvm.github.io/topolvm
+  chart: topolvm
+  version: 15.5.5
+  releaseName: topolvm
+  valuesFiles:
+    - btrfs-values.yaml
+  
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        topolvm: enabled
+
+###

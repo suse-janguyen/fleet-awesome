@@ -4,9 +4,10 @@ Currently version 1.5.1, for Kubernetes 1.30, 1.31, and 1.32. See the [user guid
 
 _TODO_
 
-User guide requires installation of the operator first, then CR definitions afterwards.
+User guide requires bootstrap installation, then the operator, and finally CR definitions afterwards.
 
 * Bootstrap Namespace files under `bootstrap`
+* adjust to `cmvalues` once a chart is available.
 
 Tracking for upstream helmchart repo:
 

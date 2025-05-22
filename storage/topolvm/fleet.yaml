@@ -17,4 +17,13 @@ overrideTargets:
       matchLabels:
         topolvm: enabled
 
+diff:
+  comparePatches:
+  - apiVersion: apps/v1
+    kind: Deployment
+    name: topolvm-controller
+    namespace: topolvm-system
+    operations:
+    - {"op": "remove", "path": "/spec/replicas"}
+
 ###

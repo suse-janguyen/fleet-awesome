@@ -259,7 +259,7 @@ controller:
       namespace: ''
       relabelings: []
       scrapeTimeout: ''
-  replicaCount: 3
+  replicaCount: 2
   securityContext:
     enabled: true
   storageCapacityTracking:

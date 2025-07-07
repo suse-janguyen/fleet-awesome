@@ -10,7 +10,7 @@ export const options = {
 };
 
 export default () => {
-  const urlRes = http.get('https://whoami-0a1016b4.nip.io/data?size=1&unit=mb');
+  const urlRes = http.get('http://l650-api.gxize.local:32163');
   sleep(1);
   // MORE STEPS
   // Here you can have more steps or complex script

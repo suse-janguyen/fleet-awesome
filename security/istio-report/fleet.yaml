@@ -1,0 +1,19 @@
+---
+defaultNamespace: istio-system
+
+labels:
+  fleet-bundle: istio-report
+
+helm:
+  releaseName: istio-report
+  version: 0.1.0
+
+kustomize:
+  dir: ""
+
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        istio-report: enabled
+
+###

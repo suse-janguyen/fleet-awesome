@@ -7,6 +7,7 @@ labels:
 helm:
   releaseName: istio-report
   version: 0.1.0
+  takeOwnership: false
 
 kustomize:
   dir: ""

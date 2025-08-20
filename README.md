@@ -48,8 +48,9 @@ See the Fleet docs about [bundle lifecycle stages](https://fleet.rancher.io/ref-
  * Use of Kustomization configuration options for safer deployment and targeting.
  * Day Two operations respecting existing Namespaces, Secrets and ConfigMap resources for targeted ClusterGroups.
 
-_Final TODO_
+_Next Steps_
 
-- [ ] Future bundle topics like Elemental, GatewayAPI, ClusterAPI
-- [ ] wrap-up and enduser testing, teammate feedback for QA
+* Future bundle topics like Elemental, GatewayAPI, ClusterAPI
+* wrap-up and enduser testing, teammate feedback for QA
+* QA, unit tests for charts and bundle templates
 

@@ -1,0 +1,5 @@
+---
+resources:
+  - report-istio-migrate.yaml
+
+###

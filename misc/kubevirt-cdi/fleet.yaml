@@ -1,0 +1,15 @@
+---
+defaultNamespace: cdi
+
+labels:
+  fleet-bundle: kubevirt-cdi
+
+kustomize:
+  dir: ""
+
+helm:
+  releaseName: kubevirt-cdi
+  version: 1.62.0
+  takeOwnership: false
+
+###

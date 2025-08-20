@@ -1,10 +1,15 @@
 ---
 defaultNamespace: kubevirt
 
+labels:
+  fleet-bundle: kubevirt
+
 kustomize:
   dir: ""
 
 helm:
   releaseName: kubevirt
+  version: v1.5.1
+  takeOwnership: false
 
 ###

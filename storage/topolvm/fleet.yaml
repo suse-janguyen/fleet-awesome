@@ -1,0 +1,41 @@
+---
+defaultNamespace: topolvm-system 
+
+labels:
+  fleet-bundle: topolvm
+
+helm:
+  repo: https://topolvm.github.io/topolvm
+  chart: topolvm
+  version: 15.5.6
+  releaseName: topolvm
+  valuesFiles:
+    - btrfs-values.yaml
+  
+overrideTargets:
+  - clusterGroupSelector:
+      matchLabels:
+        topolvm: enabled
+
+diff:
+  comparePatches:
+  - apiVersion: apps/v1
+    kind: Deployment
+    name: topolvm-controller
+    namespace: topolvm-system
+    operations:
+    - {"op": "remove", "path": "/spec/replicas"}
+  - apiVersion: cert-manager.io/v1
+    kind: Certificate
+    name: topolvm-mutatingwebhook
+    namespace: topolvm-system
+    operations:
+    - {"op": "remove", "path": "/spec/duration"}
+  - apiVersion: cert-manager.io/v1
+    kind: Certificate
+    name: topolvm-webhook-ca
+    namespace: topolvm-system
+    operations:
+    - {"op": "remove", "path": "/spec/duration"}
+
+###

@@ -1,0 +1,48 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: istio-report
+  namespace: istio-system
+spec:
+  template:
+    spec:
+      initContainers:
+      - name: istioctl
+        image: istio/istioctl:1.25.0
+        command: ["istioctl", "manifest", "translate", "-f", "/etc/istio/installer-base.yaml", "-o", "/tmp/istio-output/"]
+        volumeMounts:
+        - name: istio-base-yaml
+          mountPath: /etc/istio
+        - name: istio-output
+          mountPath: /tmp/istio-output
+
+      containers:
+      - name: istio-report
+        image: registry.opensuse.org/opensuse/leap-micro/6.1/toolbox:latest
+        command: ["bash","-c"]
+        args:
+        - cat /tmp/istio-output/README.md
+        volumeMounts:
+        - name: istio-base-yaml
+          mountPath: /etc/istio
+        - name: istio-output
+          mountPath: /tmp/istio-output
+
+      volumes:
+      - name: istio-output
+        emptyDir: {} 
+      - name: istio-base-yaml
+        configMap:
+          name: istio-installer-base
+          items:
+          - key: istio-base.yaml
+            path: installer-base.yaml
+
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+      restartPolicy: Never
+  backoffLimit: 2
+
+### next steps, consider shell & yaml report files
